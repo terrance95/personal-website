@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "terrancereynolds.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@types/theme-ui": "^0.3.7",
     "gatsby": "^2.32.3",
@@ -16,6 +15,7 @@
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-sharp": "^2.12.0",
     "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.27.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-feather": "^2.0.9",

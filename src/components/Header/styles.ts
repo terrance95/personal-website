@@ -1,7 +1,7 @@
 const sx: StyleTypes = {
 	wrapper: {
 		width: '100%',
-		pt: 4,
+		pt: [4, 5, 6],
 	},
 	flex: {
 		display: 'flex',

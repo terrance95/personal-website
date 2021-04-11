@@ -3,9 +3,9 @@ import { Box } from 'theme-ui';
 
 const _sx: StyleTypes = {
 	wrapper: {
-		maxWidth: '100rem',
 		margin: '0 auto',
-		width: "90vw"
+		width: '90vw',
+		height: '100%',
 	},
 };
 

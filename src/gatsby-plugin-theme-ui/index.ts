@@ -6,7 +6,8 @@ type ThemeTypes = {
 const theme: ThemeTypes = {
 	colors: {
 		text: '#BABAB3',
-		background: '#fff',
+		background: '#0B0B0B',
+		primary: '#f7f7df',
 	},
 	space: [
 		0,
@@ -14,7 +15,7 @@ const theme: ThemeTypes = {
 		'.5rem', // 2
 		'.75rem', // 3
 		'1rem', // 4
-		'1.5rem', // 5 
+		'1.5rem', // 5
 		'2rem', // 6
 		'2.5rem', // 7
 		'3rem', // 8
@@ -30,11 +31,17 @@ const theme: ThemeTypes = {
 		'2.074rem',
 		'2.488rem',
 		'2.986rem',
-		'2.986rem',
 		'3.583rem',
 		'4.3rem',
-		'5.16rem',
+		'4.8rem',
+		'6.192rem',
 	],
+	sizes: {
+		sm: '26.623rem',
+		md: '31.948rem',
+		lg: '38.338rem',
+		xlg: '44.005rem',
+	},
 	fonts: {
 		heading: 'Founders Grotesk Condensed',
 		body: `'Founders Grotesk'`,
@@ -46,6 +53,7 @@ const theme: ThemeTypes = {
 	},
 	fontWeights: {
 		body: 400,
+		semibold: 500,
 		heading: 700,
 	},
 	lineHeights: {
@@ -58,15 +66,23 @@ const theme: ThemeTypes = {
 			textTransform: 'uppercase',
 			fontSize: '5rem',
 		},
+		a: {
+			fontFamily: 'body',
+			color: 'text',
+			textDecoration: 'none',
+		},
 	},
 	buttons: {
 		primary: {
-			bg: "#262625",
-			fontFamily: "body",
+			bg: '#161616',
+			fontFamily: 'body',
 			fontWeight: 500,
-			px: 7
-		}
-	}
+			px: 7,
+			border: '1px solid hsl(0deg 0% 100% / 5%)',
+			color: '#f7f7df',
+		},
+	},
+	breakpoints: ['48em', '75em', '112em', '150em'],
 };
 
 export default theme;
