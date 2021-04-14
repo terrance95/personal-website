@@ -4,9 +4,10 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Box } from 'theme-ui';
 
 const gallery = [
+	require('../../images/terrance-1.jpg'),
+
 	require('../../images/terrance-3.jpg'),
 	require('../../images/terrance-5.jpg'),
-	require('../../images/terrance-1.jpg'),
 
 	// require('../../images/terrance-2.jpg'),
 ];
@@ -29,13 +30,20 @@ const Carousel: FC<ExtendStyles> = ({ sx }) => {
 				naturalSlideHeight={2800}
 				totalSlides={3}
 				visibleSlides={1.5}
-				isPlaying
 			>
 				<Slider style={{}}>
 					{gallery.map((photo, key) => {
 						return (
 							<Slide index={key}>
-								<Image src={photo} hasMasterSpinner />
+								<Image
+									src={photo}
+									hasMasterSpinner
+									style={{
+										height: '98%',
+										objectFit: 'cover',
+										objectPosition: 'center center',
+									}}
+								/>
 							</Slide>
 						);
 					})}

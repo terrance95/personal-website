@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import { Box } from 'theme-ui';
+import { Box, SxStyleProp } from 'theme-ui';
 
 const _sx: StyleTypes = {
 	wrapper: {
@@ -9,7 +9,7 @@ const _sx: StyleTypes = {
 	},
 };
 
-type ContainerProps = { children: ReactNode; sx?: StyleTypes };
+type ContainerProps = { children: ReactNode; sx?: SxStyleProp };
 
 const Container: FC<ContainerProps> = ({ children, sx }) => {
 	return <Box sx={{ ..._sx.wrapper, ...sx }}>{children}</Box>;

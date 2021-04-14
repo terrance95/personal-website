@@ -8,6 +8,7 @@ const theme: ThemeTypes = {
 		text: '#BABAB3',
 		background: '#0B0B0B',
 		primary: '#f7f7df',
+		muted: '#6D6D63',
 	},
 	space: [
 		0,
@@ -39,6 +40,7 @@ const theme: ThemeTypes = {
 	sizes: {
 		sm: '26.623rem',
 		md: '31.948rem',
+		mdx: '33.000rem',
 		lg: '38.338rem',
 		xlg: '44.005rem',
 	},
@@ -82,7 +84,7 @@ const theme: ThemeTypes = {
 			color: '#f7f7df',
 		},
 	},
-	breakpoints: ['48em', '75em', '112em', '150em'],
+	breakpoints: ['48em', '75em', '112em', '150em', '175em'],
 };
 
 export default theme;

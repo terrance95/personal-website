@@ -8,25 +8,25 @@ const sx: StyleTypes = {
 	},
 
 	heading: {
-		fontSize: [6, 7, 7, 9],
+		fontSize: [6, 7, 7, 7, 8],
 		lineHeight: '1.0',
-		letterSpacing: ['auto', '.1rem'],
+		//letterSpacing: ['auto', '.1rem'],
 	},
 	text: {
 		fontFamily: 'body',
-		fontSize: [1, 2, 2, 3],
+		fontSize: [1, 2, 2, 2, 3],
 		mt: 4,
 		lineHeight: '1.4',
-		maxWidth: ['md', 'sm', 'md', 'xlg'],
+		maxWidth: ['md', 'sm', 'md', 'md', 'mdx'],
 	},
 	grid: {
 		display: 'grid',
-		gridTemplateColumns: '3fr 2fr',
+		gridTemplateColumns: '2fr 2fr',
 		alignItems: 'center',
 		height: '100%',
 	},
 	label: {
-		fontSize: ['.625rem', '.625rem', '.625rem', 0],
+		fontSize: ['.625rem', '.625rem', '.625rem', '.750rem'],
 		textTransform: 'uppercase',
 		color: '#BABAB3',
 		ml: 4,
