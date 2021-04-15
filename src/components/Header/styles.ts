@@ -13,6 +13,13 @@ const sx: StyleTypes = {
 			cursor: 'pointer',
 		},
 	},
+	title: {
+		textTransform: 'uppercase',
+		fontSize: 0,
+		alignSelf: 'flex-start',
+		letterSpacing: '.025rem',
+		display: ['none', 'block'],
+	},
 };
 
 export default sx;

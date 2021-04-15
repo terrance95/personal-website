@@ -4,15 +4,22 @@ import { Box, SxStyleProp } from 'theme-ui';
 const _sx: StyleTypes = {
 	wrapper: {
 		margin: '0 auto',
-		width: '90vw',
 		height: '100%',
 	},
 };
 
-type ContainerProps = { children: ReactNode; sx?: SxStyleProp };
+type ContainerProps = {
+	children: ReactNode;
+	sx?: SxStyleProp;
+	fullWidth?: boolean;
+};
 
-const Container: FC<ContainerProps> = ({ children, sx }) => {
-	return <Box sx={{ ..._sx.wrapper, ...sx }}>{children}</Box>;
+const Container: FC<ContainerProps> = ({ children, sx, fullWidth = true }) => {
+	return (
+		<Box sx={{ ..._sx.wrapper, width: fullWidth ? '90vw' : 'xxlg', ...sx }}>
+			{children}
+		</Box>
+	);
 };
 
 export default Container;

@@ -1,17 +1,15 @@
 import { Link } from 'gatsby';
 import React, { FC } from 'react';
-import { ChevronRight, Minus } from 'react-feather';
+import { ChevronRight } from 'react-feather';
 import { Box, Button, Heading, Text } from 'theme-ui';
+import Tag from '../Tag';
 import _sx from './styles';
 
-const Landing: FC<ExtendStyles> = ({ sx }) => {
+const Intro: FC<ExtendStyles> = ({ sx }) => {
 	return (
 		<Box sx={{ justifySelf: 'normal', ...sx }}>
 			<Box sx={{ ..._sx.row, mb: 6 }}>
-				<Minus />
-				<Text sx={_sx.label} as="span">
-					Developer / Designer / Tokyo
-				</Text>
+				<Tag>Developer / Designer / Tokyo</Tag>
 			</Box>
 			<Heading as="h1" sx={_sx.heading}>
 				A Difference
@@ -34,4 +32,4 @@ const Landing: FC<ExtendStyles> = ({ sx }) => {
 	);
 };
 
-export default Landing;
+export default Intro;

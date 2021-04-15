@@ -3,48 +3,11 @@ import React, { FC } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'react-feather';
 import { Box } from 'theme-ui';
+import theme from '../../gatsby-plugin-theme-ui';
 import Container from '../Container';
-import Header from '../Header';
+import Footer from '../Footer';
 import Logo from '../Logo';
-
-const sx: StyleTypes = {
-	wrapper: {
-		width: '100%',
-		position: 'absolute',
-		top: '0',
-		bg: 'background',
-		display: 'grid',
-		gridTemplateRows: 'auto 1fr',
-		margin: [0],
-		minHeight: '100vh',
-	},
-	flex: {
-		display: 'flex',
-		justifyContent: 'space-between',
-		alignItems: 'center',
-		top: [4, 5, 5, 6],
-		position: 'relative',
-	},
-	menu: {
-		height: '100%',
-		width: '100%',
-		display: 'grid',
-		placeItems: 'center',
-		textAlign: 'center',
-		a: {
-			color: 'muted',
-			textDecoration: 'none',
-			fontFamily: 'Founders Grotesk Condensed',
-			fontSize: 9,
-			display: 'inline-block',
-			textTransform: 'uppercase',
-			pb: 9,
-		},
-	},
-	close: {
-		cursor: 'pointer',
-	},
-};
+import sx from './styles';
 
 type navItemsType = {
 	title: string;
@@ -53,9 +16,9 @@ type navItemsType = {
 
 const navItems: navItemsType[] = [
 	{ title: 'Home', to: '/' },
-	{ title: 'Writings', to: '/' },
-	{ title: 'Side Hustles', to: '/' },
-	{ title: 'Photos', to: '/' },
+	{ title: 'Writings', to: '#' },
+	{ title: 'Side Hustles', to: '#' },
+	{ title: 'Photos', to: '/photos' },
 ];
 
 const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
@@ -63,23 +26,48 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 		<Box sx={sx.wrapper}>
 			<Container>
 				<Box sx={sx.flex}>
-					<Logo />
+					<Box onClick={setMenu}>
+						<Logo />
+					</Box>
 					<Box onClick={setMenu} sx={sx.close}>
 						<X />
 					</Box>
 				</Box>
 			</Container>
+			<Box
+				sx={{
+					bg: 'primary',
+					width: ['16rem', '18rem'],
+					height: ['16rem', '18rem'],
+					top: '50%',
+					left: '50%',
+					position: 'absolute',
+					transform: 'translate(-50%, -50%)',
+					opacity: [0.1, 0.05],
+					filter: 'blur(4rem)',
+					zIndex: 0,
+				}}
+			/>
 			<Box sx={sx.menu}>
 				<Box>
 					{navItems.map((item: navItemsType) => {
 						return (
-							<Box>
-								<Link to={item.to}>{item.title}</Link>
+							<Box sx={sx.link}>
+								<Link
+									to={item.to}
+									activeStyle={{
+										color: theme.colors.primary,
+										fontWeight: 700,
+									}}
+								>
+									{item.title}
+								</Link>
 							</Box>
 						);
 					})}
 				</Box>
 			</Box>
+			<Footer />
 		</Box>,
 		document.body,
 	);

@@ -1,28 +1,28 @@
 import React, { FC, useState } from 'react';
-import { Menu, X } from 'react-feather';
+import { Menu } from 'react-feather';
 import { Box, Text } from 'theme-ui';
 import Container from '../Container';
 import Navigation from '../Navigation';
-import { MenuIcon } from '../Icons';
 import sx from './styles';
 import Logo from '../Logo';
+import { Link } from 'gatsby';
 
 type HeaderProps = {
-	isOpen?: boolean;
+	title?: string;
 };
 
-const menuItems = {};
-
-const Header: FC<HeaderProps> = ({ isOpen = false }) => {
+const Header: FC<HeaderProps> = ({ title }) => {
 	const [menu, setMenu] = useState(false);
 
 	return (
 		<Box as="header" sx={sx.wrapper}>
-			{/* @ts-expect-error  */}
 			<Container sx={sx.flex}>
-				<Logo />
+				<Link to="/">
+					<Logo />
+				</Link>
+				{title && <Text sx={sx.title}>{title}</Text>}
 				<Box sx={sx.button} onClick={() => setMenu(!menu)}>
-					{!isOpen ? <Menu /> : <X />}
+					<Menu />
 				</Box>
 				{menu && <Navigation setMenu={() => setMenu(!menu)} />}
 			</Container>

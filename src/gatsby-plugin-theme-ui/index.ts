@@ -43,6 +43,9 @@ const theme: ThemeTypes = {
 		mdx: '33.000rem',
 		lg: '38.338rem',
 		xlg: '44.005rem',
+		xxlg: '55.206rem',
+		mg: '66.247rem',
+		xmg: '79.497rem',
 	},
 	fonts: {
 		heading: 'Founders Grotesk Condensed',
@@ -63,6 +66,10 @@ const theme: ThemeTypes = {
 		heading: 1.125,
 	},
 	styles: {
+		root: {
+			fontFamily: 'body',
+		},
+
 		h1: {
 			fontWeight: 700,
 			textTransform: 'uppercase',
