@@ -8,6 +8,8 @@ const sx: StyleTypes = {
 		gridTemplateRows: 'auto 1fr',
 		margin: [0],
 		minHeight: '100vh',
+		height: '100%',
+		overflow: 'hidden',
 	},
 	flex: {
 		display: 'flex',

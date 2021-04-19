@@ -86,7 +86,7 @@ const theme: ThemeTypes = {
 			bg: '#161616',
 			fontFamily: 'body',
 			fontWeight: 500,
-			px: 7,
+			px: [5, 7],
 			border: '1px solid hsl(0deg 0% 100% / 5%)',
 			color: '#f7f7df',
 		},

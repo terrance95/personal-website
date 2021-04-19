@@ -8,7 +8,7 @@ import _sx from './styles';
 const Intro: FC<ExtendStyles> = ({ sx }) => {
 	return (
 		<Box sx={{ justifySelf: 'normal', ...sx }}>
-			<Box sx={{ ..._sx.row, mb: 6 }}>
+			<Box sx={{ ..._sx.row, mb: [2, 6], mt: [4, 0] }}>
 				<Tag>Developer / Designer / Tokyo</Tag>
 			</Box>
 			<Heading as="h1" sx={_sx.heading}>
@@ -21,7 +21,7 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 				and shapes them into one product.
 			</Text>
 
-			<Box sx={{ ..._sx.row, mt: 9 }}>
+			<Box sx={{ ..._sx.row, mt: [6, 9] }}>
 				<Button variant="primary">Contact Me</Button>
 				<Box sx={_sx.link}>
 					<Link to="/">View My Writing</Link>

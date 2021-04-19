@@ -8,13 +8,13 @@ const sx: StyleTypes = {
 	},
 
 	heading: {
-		fontSize: [6, 7, 7, 7, 8],
+		fontSize: [5, 7, 7, 7, 8],
 		lineHeight: '1.0',
 		//letterSpacing: ['auto', '.1rem'],
 	},
 	text: {
 		fontFamily: 'body',
-		fontSize: [1, 2, 2, 2, 3],
+		fontSize: [0, 2, 2, 2, 3],
 		mt: 4,
 		lineHeight: '1.4',
 		maxWidth: ['md', 'sm', 'md', 'md', 'mdx'],
@@ -41,7 +41,7 @@ const sx: StyleTypes = {
 		display: 'flex',
 		alignItems: 'center',
 		a: {
-			pl: 7,
+			pl: [5, 7],
 			fontWeight: 500,
 			fontFamily: 'body',
 			color: '#f7f7df',
