@@ -6,6 +6,7 @@ import Navigation from '../Navigation';
 import sx from './styles';
 import Logo from '../Logo';
 import { Link } from 'gatsby';
+import '../index.css';
 
 type HeaderProps = {
 	title?: string;

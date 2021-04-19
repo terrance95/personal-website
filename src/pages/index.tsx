@@ -15,6 +15,7 @@ const IndexPage = () => {
 			<Box>
 				<Container>
 					<Box sx={sx.grid}>
+						{/* @ts-expect-error */}
 						<Intro sx={{ alignSelf: 'center' }} />
 						<Carousel
 							sx={{

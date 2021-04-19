@@ -1,8 +1,8 @@
 import React from 'react';
 import { AspectImage, Box } from 'theme-ui';
 import Container from '../components/Container';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+
+import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Tag from '../components/Tag';
 
@@ -16,9 +16,8 @@ const photoGallery: PhotoGalleryTypes = {
 const PhotoPage = () => {
 	const title = 'Photos';
 	return (
-		<Box sx={sx.wrapper}>
+		<Layout>
 			<SEO title={title} />
-			<Header title={title} />
 			<Container fullWidth={false}>
 				<Box sx={sx.section}>
 					<Box sx={{ mb: 4 }}>
@@ -29,9 +28,7 @@ const PhotoPage = () => {
 					})}
 				</Box>
 			</Container>
-
-			<Footer />
-		</Box>
+		</Layout>
 	);
 };
 
