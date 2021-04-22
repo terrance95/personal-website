@@ -6,7 +6,7 @@ const Logo = () => {
 	return (
 		<Box
 			sx={{
-				width: ['4.3rem', '5.16rem', '6.192rem'],
+				width: ['3.583rem', '3.583rem', '5.16rem', '6.192rem'],
 				height: '100%',
 			}}
 		>

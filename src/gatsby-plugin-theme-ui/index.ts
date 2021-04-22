@@ -4,6 +4,8 @@ type ThemeTypes = {
 };
 
 const theme: ThemeTypes = {
+	root: {},
+
 	colors: {
 		text: '#BABAB3',
 		background: '#0B0B0B',
@@ -38,6 +40,8 @@ const theme: ThemeTypes = {
 		'6.192rem',
 	],
 	sizes: {
+		tny: '22.186rem',
+		xsm: '24rem',
 		sm: '26.623rem',
 		md: '31.948rem',
 		mdx: '33.000rem',
@@ -85,13 +89,26 @@ const theme: ThemeTypes = {
 		primary: {
 			bg: '#161616',
 			fontFamily: 'body',
+			fontSize: [0, 0, 1, 1],
 			fontWeight: 500,
-			px: [5, 7],
+			px: [3, 3, 3, 3, 7],
+			py: [1, 1, 2, 2],
+			width: '100%',
 			border: '1px solid hsl(0deg 0% 100% / 5%)',
 			color: '#f7f7df',
 		},
 	},
-	breakpoints: ['48em', '75em', '112em', '150em', '175em'],
+	breakpoints: [
+		'20em',
+		'23em',
+		'48em',
+		'64rem',
+		'75em',
+		'90em',
+		'112em',
+		'150em',
+		'175em',
+	],
 };
 
 export default theme;

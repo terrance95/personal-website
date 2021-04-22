@@ -8,16 +8,16 @@ const sx: StyleTypes = {
 	},
 
 	heading: {
-		fontSize: [5, 7, 7, 7, 8],
+		fontSize: [4, 4, 5, 6, 6, 6, 7],
 		lineHeight: '1.0',
 		//letterSpacing: ['auto', '.1rem'],
 	},
 	text: {
 		fontFamily: 'body',
-		fontSize: [0, 2, 2, 2, 3],
+		fontSize: ['.875rem', '.875rem', '.875rem', 1, 1, 1, 2],
 		mt: 4,
 		lineHeight: '1.4',
-		maxWidth: ['md', 'sm', 'md', 'md', 'mdx'],
+		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'sm', 'md', 'mdx'],
 	},
 	grid: {
 		display: 'grid',
@@ -34,24 +34,24 @@ const sx: StyleTypes = {
 		letterSpacing: ['.075rem', '.1rem'],
 	},
 	row: {
-		display: 'flex',
+		display: 'grid',
+		maxWidth: ['sm', 'xsm'],
+		gridTemplateColumns: ['1fr 1fr', '1fr 1fr'],
 		alignItems: 'center',
 	},
 	link: {
 		display: 'flex',
 		alignItems: 'center',
 		a: {
-			pl: [5, 7],
+			pl: [0, 0, 5, 5, 7],
 			fontWeight: 500,
 			fontFamily: 'body',
 			color: '#f7f7df',
 			textDecoration: 'none',
 			display: 'block',
-			pr: 2,
-		},
-		svg: {
-			color: '#f7f7df',
-			width: '1rem',
+			pr: [0, 0, 0, 0, 1],
+			m: ['0 auto', '0 auto', '0'],
+			fontSize: [0, 0, 1],
 		},
 	},
 };

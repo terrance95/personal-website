@@ -78,3 +78,7 @@ h6 {
 	left: 10px;
 	top: 10px;
 }
+
+::selection {
+	background: #31312d;
+}
