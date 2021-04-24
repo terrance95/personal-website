@@ -31,10 +31,10 @@ const Carousel: FC<ExtendStyles> = ({ sx }) => {
 				totalSlides={3}
 				visibleSlides={1.5}
 			>
-				<Slider style={{}}>
+				<Slider>
 					{gallery.map((photo, key) => {
 						return (
-							<Slide index={key}>
+							<Slide index={key} key={key}>
 								<Image
 									src={photo}
 									hasMasterSpinner

@@ -37,7 +37,6 @@ const IndexPage = () => {
 
 const sx: StyleTypes = {
 	wrapper: {
-		bg: '#0B0B0B',
 		display: 'grid',
 		gridTemplateRows: 'auto 1fr auto',
 		margin: [0],

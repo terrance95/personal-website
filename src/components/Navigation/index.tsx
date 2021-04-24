@@ -14,16 +14,16 @@ import { motion } from 'framer-motion';
 const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 	return createPortal(
 		<motion.div
-		// animate={{
-		// 	height: '100%',
-		// 	position: 'fixed',
-		// 	top: 0,
-		// 	left: 0,
-		// 	width: '100%',
-		// 	minHeight: '100vh',
-		// 	zIndex: 9999,
-		// }}
-		// transition={{ duration: 0.2, ease: 'easeInOut', bounce: true }}
+			animate={{
+				height: '100%',
+				position: 'fixed',
+				top: 0,
+				left: 0,
+				width: '100%',
+				minHeight: '100vh',
+				zIndex: 9999,
+			}}
+			transition={{ duration: 0.2, ease: 'easeInOut', bounce: true }}
 		>
 			<Box sx={sx.wrapper}>
 				<Container>

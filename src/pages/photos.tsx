@@ -1,9 +1,12 @@
 import React from 'react';
 import { AspectImage, Box } from 'theme-ui';
 import Container from '../components/Container';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import SlideShow from '../components/Slideshow';
 import Tag from '../components/Tag';
 
 type PhotoGalleryTypes = {
@@ -14,33 +17,26 @@ const photoGallery: PhotoGalleryTypes = {
 };
 
 const PhotoPage = () => {
-	const title = 'Photos';
+	const title = 'Photos | Terrance Reynolds';
 	return (
-		<Layout>
+		<Box sx={sx.wrapper}>
+			<Header />
 			<SEO title={title} />
-			<Container fullWidth={false}>
-				<Box sx={sx.section}>
-					<Box sx={{ mb: 4 }}>
-						<Tag>Landscapes</Tag>
-					</Box>
-					{photoGallery.landscapes.map((photo: any) => {
-						return <AspectImage src={photo} ratio={9 / 16} />;
-					})}
-				</Box>
+			<Container>
+				<SlideShow />
 			</Container>
-		</Layout>
+			<Footer />
+		</Box>
 	);
 };
 
 const sx: StyleTypes = {
 	wrapper: {
-		bg: '#0B0B0B',
 		display: 'grid',
 		gridTemplateRows: 'auto 1fr auto',
 		margin: [0],
 		minHeight: '100vh',
 	},
-	section: {},
 };
 
 export default PhotoPage;
