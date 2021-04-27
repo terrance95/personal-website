@@ -97,7 +97,7 @@ const sx: StyleTypes = {
 		},
 	},
 	tag: {
-		mt: 8,
+		mt: [4, 4, 6, 8],
 		mb: 5,
 		span: {
 			fontSize: 0,

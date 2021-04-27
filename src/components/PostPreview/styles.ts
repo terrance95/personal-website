@@ -1,11 +1,11 @@
 const sx: StyleTypes = {
 	wrapper: {
 		mt: 1,
-		mb: 7,
+		mb: [5, 5, 5, 7],
 		maxWidth: 'xlg',
 	},
 	heading: {
-		fontSize: 3,
+		fontSize: [2, 2, 2, 3],
 		fontFamily: 'heading',
 		letterSpacing: '0.0125rem',
 		mb: 2,
