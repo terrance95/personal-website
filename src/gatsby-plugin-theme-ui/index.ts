@@ -4,8 +4,6 @@ type ThemeTypes = {
 };
 
 const theme: ThemeTypes = {
-	root: {},
-
 	colors: {
 		text: '#BABAB3',
 		background: '#0B0B0B',
@@ -79,6 +77,12 @@ const theme: ThemeTypes = {
 			textTransform: 'uppercase',
 			fontSize: '5rem',
 		},
+
+		h3: {
+			fontSize: 2,
+			fontFamily: 'Founders Grotesk Condensed',
+		},
+
 		a: {
 			fontFamily: 'body',
 			color: 'text',
@@ -96,6 +100,24 @@ const theme: ThemeTypes = {
 			width: '100%',
 			border: '1px solid hsl(0deg 0% 100% / 5%)',
 			color: '#f7f7df',
+			'&:hover': {
+				cursor: 'pointer',
+			},
+		},
+		back: {
+			bg: '#0b0b0b',
+			fontFamily: 'body',
+			fontSize: 0,
+			fontWeight: 500,
+			px: [3, 3, 3, 3, 3],
+			py: [1, 1, 2, 2],
+			border: '1px solid hsl(0deg 0% 100% / 5%)',
+			color: '#f7f7df',
+			display: 'flex',
+			alignItems: 'center',
+			textTransform: 'uppercase',
+			letterSpacing: '.050rem',
+			borderRadius: '.25rem',
 		},
 	},
 	breakpoints: [

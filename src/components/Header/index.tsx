@@ -10,9 +10,10 @@ import '../index.css';
 
 type HeaderProps = {
 	title?: string;
+	to?: string;
 };
 
-const Header: FC<HeaderProps> = ({ title }) => {
+const Header: FC<HeaderProps> = ({ title, to }) => {
 	const [menu, setMenu] = useState(false);
 
 	return (
@@ -21,7 +22,13 @@ const Header: FC<HeaderProps> = ({ title }) => {
 				<Link to="/">
 					<Logo />
 				</Link>
-				{title && <Text sx={sx.title}>{title}</Text>}
+				{title && (
+					<Box sx={sx.title}>
+						<Link to={to ? `${to.toLowerCase()}` : '/'}>
+							<Text>{title}</Text>
+						</Link>
+					</Box>
+				)}
 				<Box sx={sx.button} onClick={() => setMenu(!menu)}>
 					<Menu />
 				</Box>

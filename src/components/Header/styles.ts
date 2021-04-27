@@ -6,7 +6,7 @@ const sx: StyleTypes = {
 	flex: {
 		display: 'flex',
 		justifyContent: 'space-between',
-		alignItems: 'center',
+		alignItems: 'flex-start',
 	},
 	button: {
 		svg: {
@@ -16,9 +16,13 @@ const sx: StyleTypes = {
 	title: {
 		textTransform: 'uppercase',
 		fontSize: 0,
-		alignSelf: 'flex-start',
 		letterSpacing: '.025rem',
-		display: ['none', 'block'],
+		display: ['none', 'none', 'none', 'none', 'block'],
+
+		a: {
+			color: 'primary',
+			textDecoration: 'none',
+		},
 	},
 };
 

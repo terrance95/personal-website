@@ -5,7 +5,6 @@ import { Box } from 'theme-ui';
 
 const gallery = [
 	require('../../images/terrance-1.jpg'),
-
 	require('../../images/terrance-3.jpg'),
 	require('../../images/terrance-5.jpg'),
 

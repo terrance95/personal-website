@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'react-feather';
 import { Box } from 'theme-ui';
@@ -12,6 +12,15 @@ import sx from './styles';
 import { motion } from 'framer-motion';
 
 const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
+	useEffect(() => {
+		// DISABLED SCROLL
+		document.body.style.overflowY = 'hidden';
+
+		return () => {
+			document.body.style.overflowY = 'initial';
+		};
+	}, []);
+
 	return createPortal(
 		<motion.div
 			animate={{
@@ -22,6 +31,8 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 				width: '100%',
 				minHeight: '100vh',
 				zIndex: 9999,
+				overflowY: 'hidden',
+				margin: 0,
 			}}
 			transition={{ duration: 0.2, ease: 'easeInOut', bounce: true }}
 		>

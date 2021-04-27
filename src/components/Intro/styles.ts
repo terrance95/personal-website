@@ -36,7 +36,7 @@ const sx: StyleTypes = {
 	row: {
 		display: 'grid',
 		maxWidth: ['sm', 'xsm'],
-		gridTemplateColumns: ['1fr 1fr', '1fr 1fr'],
+		gridTemplateColumns: ['1.25fr 1fr', '1.25fr 1fr'],
 		alignItems: 'center',
 	},
 	link: {

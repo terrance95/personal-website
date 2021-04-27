@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
 import { Minus } from 'react-feather';
 import { Box, Text } from 'theme-ui';
+import sx from '../Navigation/styles';
 
-const sx: StyleTypes = {
+const _sx: StyleTypes = {
 	flex: {
 		display: 'flex',
 		alignItems: 'center',
@@ -19,6 +20,7 @@ const sx: StyleTypes = {
 			'.625rem',
 			'.625rem',
 			'.625rem',
+			'.625rem',
 			'.750rem',
 		],
 		textTransform: 'uppercase',
@@ -29,12 +31,12 @@ const sx: StyleTypes = {
 	},
 };
 
-const Tag: FC = ({ children }) => {
+const Tag: FC<ExtendStyles> = ({ children, sx }) => {
 	return (
-		<Box sx={sx.flex}>
+		<Box sx={{ ...sx, ..._sx.flex }}>
 			<Minus strokeWidth="1" />
 
-			<Text sx={sx.label} as="span">
+			<Text sx={_sx.label} as="span">
 				{children}
 			</Text>
 		</Box>
