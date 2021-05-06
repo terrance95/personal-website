@@ -11,6 +11,7 @@ const usePosts = () => {
 						category
 						author
 						date
+						excerpt
 					}
 					excerpt
 				}

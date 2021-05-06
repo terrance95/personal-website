@@ -17,7 +17,7 @@ const sx: StyleTypes = {
 		fontSize: ['.875rem', '.875rem', '.875rem', 1, 1, 1, 2],
 		mt: 4,
 		lineHeight: '1.4',
-		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'sm', 'md', 'mdx'],
+		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'sm', 'sm'],
 	},
 	grid: {
 		display: 'grid',

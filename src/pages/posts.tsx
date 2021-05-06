@@ -16,9 +16,11 @@ const PostPage = () => {
 			<SEO title="Writings | Terrance Reynolds" />
 
 			<Container sx={{ py: 8 }}>
-				{posts.map((post: PostPreviewTypes) => {
-					return <PostPreview {...post} />;
-				})}
+				<Box sx={{ display: 'grid', justifyContent: 'center' }}>
+					{posts.map((post: PostPreviewTypes) => {
+						return <PostPreview {...post} />;
+					})}
+				</Box>
 			</Container>
 			<Footer />
 		</Box>

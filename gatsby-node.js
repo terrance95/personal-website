@@ -5,6 +5,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 				nodes {
 					frontmatter {
 						slug
+						category
+						excerpt
 					}
 					body
 				}
@@ -19,12 +21,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 	const posts = result.data.allMdx.nodes;
 
 	posts.forEach((post) => {
-		actions.createPage({
-			path: `/posts/${post.frontmatter.slug}`,
-			component: require.resolve('./src/templates/post.tsx'),
-			context: {
-				slug: post.frontmatter.slug,
-			},
-		});
+		if (post.frontmatter.category === 'Featured') {
+			actions.createPage({
+				path: `/posts/${post.frontmatter.slug}`,
+				component: require.resolve(
+					'./src/templates/Featured/index.tsx',
+				),
+				context: {
+					slug: post.frontmatter.slug,
+				},
+			});
+		} else {
+			actions.createPage({
+				path: `/posts/${post.frontmatter.slug}`,
+				component: require.resolve(
+					'./src/templates/Standard/index.tsx',
+				),
+				context: {
+					slug: post.frontmatter.slug,
+				},
+			});
+		}
 	});
 };
