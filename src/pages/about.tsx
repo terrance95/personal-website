@@ -156,7 +156,6 @@ const AboutPage = () => {
 
 					<Box sx={sx.buttons}>
 						<Button variant="primary">Contact Me</Button>
-						<Button variant="secondary">View Side Hustles</Button>
 					</Box>
 				</Box>
 			</Container>
@@ -209,11 +208,8 @@ const sx: StyleTypes = {
 	},
 	buttons: {
 		mt: 4,
-		display: 'grid',
+
 		mb: 8,
-		gridTemplateColumns: '1fr 1fr',
-		columnGap: 4,
-		alignItems: 'center',
 	},
 	image: {
 		pb: [0, 0, 0, 2],
