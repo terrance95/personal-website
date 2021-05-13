@@ -190,7 +190,7 @@ const sx: StyleTypes = {
 	heading: {
 		fontFamily: 'heading',
 		fontSize: [2, 2, 3, 3],
-		lineHeight: 1.2,
+		lineHeight: 1.15,
 		py: [2, 2, 4, 4],
 	},
 	h2: {
