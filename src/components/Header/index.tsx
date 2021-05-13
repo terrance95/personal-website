@@ -33,11 +33,7 @@ const Header: FC<HeaderProps> = ({ title, to }) => {
 				<Box sx={sx.button} onClick={() => setMenu(!menu)}>
 					<Menu />
 				</Box>
-				{/* <Box>
-					{navItems.map((item) => {
-						return <Box>{item.title}</Box>;
-					})}
-				</Box> */}
+
 				{menu && <Navigation setMenu={() => setMenu(!menu)} />}
 			</Container>
 		</Box>
