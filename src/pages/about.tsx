@@ -204,7 +204,7 @@ const sx: StyleTypes = {
 		fontFamily: 'heading',
 	},
 	tag: {
-		mt: [2, 2, 2, 8],
+		mt: [1, 1, 1, 8],
 		mb: [6, 6, 6, 8],
 	},
 	buttons: {
