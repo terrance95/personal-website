@@ -204,11 +204,8 @@ const sx: StyleTypes = {
 		fontFamily: 'heading',
 	},
 	tag: {
-		mt: [4, 4, 6, 8],
-		mb: 8,
-		span: {
-			fontSize: 0,
-		},
+		mt: [2, 2, 2, 8],
+		mb: [6, 6, 6, 8],
 	},
 	buttons: {
 		mt: 4,
