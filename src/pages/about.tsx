@@ -129,7 +129,7 @@ const AboutPage = () => {
 													flexDirection: 'row',
 												}}
 											>
-												<Text as="h3" sx={sx.h3}>
+												<Text as="h3" sx={sx.h4}>
 													{job.position}
 												</Text>
 												<Text
@@ -152,7 +152,6 @@ const AboutPage = () => {
 							})}
 						</Box>
 					</Box>
-					<Box sx={sx.line} />
 
 					<Box sx={sx.buttons}>
 						<Button variant="primary">Contact Me</Button>
@@ -200,6 +199,10 @@ const sx: StyleTypes = {
 	},
 	h3: {
 		fontSize: 2,
+		fontFamily: 'heading',
+	},
+	h4: {
+		fontSize: 1,
 		fontFamily: 'heading',
 	},
 	tag: {
