@@ -183,16 +183,16 @@ const sx: StyleTypes = {
 		maxWidth: 'lg',
 		margin: '0 auto',
 		p: {
-			my: 5,
-			fontSize: 2,
+			mb: 5,
+			fontSize: [1, 1, 1, 2],
 			lineHeight: 1.5,
 		},
 	},
 	heading: {
 		fontFamily: 'heading',
-		fontSize: 3,
-		mb: 4,
-		lineHeight: 1.1,
+		fontSize: [2, 2, 3, 3],
+		lineHeight: 1.2,
+		py: [2, 2, 4, 4],
 	},
 	h2: {
 		mt: 4,
@@ -219,7 +219,7 @@ const sx: StyleTypes = {
 		alignItems: 'center',
 	},
 	image: {
-		pb: 6,
+		pb: [0, 0, 0, 2],
 	},
 	line: {
 		display: 'flex',
