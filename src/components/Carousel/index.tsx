@@ -7,7 +7,6 @@ const gallery = [
 	require('../../images/terrance-1-min.jpg'),
 	require('../../images/terrance-3-min.jpg'),
 	require('../../images/terrance-5-min.jpg'),
-	require('../../images/terrance-4.jpg'),
 ];
 
 const Carousel: FC<ExtendStyles> = ({ sx }) => {
@@ -26,8 +25,10 @@ const Carousel: FC<ExtendStyles> = ({ sx }) => {
 			<CarouselProvider
 				naturalSlideWidth={2000}
 				naturalSlideHeight={2800}
-				totalSlides={4}
+				totalSlides={3}
 				visibleSlides={1.5}
+				isPlaying
+				infinite
 			>
 				<Slider>
 					{gallery.map((photo, key) => {

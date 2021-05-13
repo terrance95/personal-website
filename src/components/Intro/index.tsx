@@ -8,7 +8,7 @@ import _sx from './styles';
 const Intro: FC<ExtendStyles> = ({ sx }) => {
 	return (
 		<Box sx={{ justifySelf: 'normal', ...sx }}>
-			<Box sx={{ mb: 4, mt: [0, 5, 7, 8, 0] }}>
+			<Box sx={{ mb: [4, 4, 4, 4, 4, 4, 4, 4, 8], mt: [0, 5, 7, 8, 0] }}>
 				<Tag>Developer / Designer / Tokyo</Tag>
 			</Box>
 			<Heading as="h1" sx={_sx.heading}>
@@ -22,12 +22,14 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 			</Text>
 
 			<Box sx={{ ..._sx.row, mt: [6, 6, 6, 8, 9] }}>
-				<Link to="/posts" style={{ textDecoration: 'none' }}>
-					<Button variant="primary">View My Writings</Button>
+				<Link to="/about" style={{ textDecoration: 'none' }}>
+					<Button variant="primary">About Me</Button>
 				</Link>
-				<Box sx={_sx.link}>
-					<Link to="/">Contact Me</Link>
-				</Box>
+
+				<Link to="/posts">
+					{' '}
+					<Button variant="secondary">View Writings</Button>
+				</Link>
 			</Box>
 		</Box>
 	);

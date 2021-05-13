@@ -22,6 +22,7 @@ const _sx: StyleTypes = {
 			'.625rem',
 			'.625rem',
 			'.750rem',
+			'.875rem',
 		],
 		textTransform: 'uppercase',
 		color: '#BABAB3',

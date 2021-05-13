@@ -1,5 +1,4 @@
 type ThemeTypes = {
-	styles: StyleTypes;
 	[index: string]: any;
 };
 
@@ -67,42 +66,49 @@ const theme: ThemeTypes = {
 		body: 1.5,
 		heading: 1.125,
 	},
-	styles: {
-		root: {
-			fontFamily: 'body',
-		},
 
-		h1: {
-			fontWeight: 700,
-			textTransform: 'uppercase',
-			fontSize: '5rem',
-		},
-
-		h3: {
-			fontSize: 2,
-			fontFamily: 'Founders Grotesk Condensed',
-		},
-
-		a: {
-			fontFamily: 'body',
-			color: 'text',
-			textDecoration: 'none',
-		},
-	},
 	buttons: {
 		primary: {
+			bg: 'primary',
+			fontFamily: 'body',
+			fontSize: [0, 0, 1, 1],
+			fontWeight: 500,
+			px: [3, 3, 3, 3, 5],
+			py: [1, 1, 2, 2],
+			width: '100%',
+			border: '1px solid hsl(0deg 0% 100% / 5%)',
+			color: '#161616',
+			transition: 'all 200ms ease-in-out',
+			cursor: 'pointer',
+
+			'&:hover': {
+				bg: '#bcbcaa',
+			},
+		},
+		secondary: {
 			bg: '#161616',
+			fontFamily: 'body',
+			fontSize: [0, 0, 1, 1],
+			fontWeight: 500,
+			py: [1, 1, 2, 2],
+			width: '100%',
+			border: '1px solid hsl(0deg 0% 100% / 5%)',
+			color: '#f7f7df',
+			cursor: 'pointer',
+			'&:hover': {},
+		},
+		ghost: {
+			bg: 'rgb(247 247 223 / 0%)',
 			fontFamily: 'body',
 			fontSize: [0, 0, 1, 1],
 			fontWeight: 500,
 			px: [3, 3, 3, 3, 7],
 			py: [1, 1, 2, 2],
 			width: '100%',
-			border: '1px solid hsl(0deg 0% 100% / 5%)',
+			border: 'none',
 			color: '#f7f7df',
-			'&:hover': {
-				cursor: 'pointer',
-			},
+			cursor: 'pointer',
+			'&:hover': {},
 		},
 		back: {
 			bg: '#161616',
@@ -118,6 +124,7 @@ const theme: ThemeTypes = {
 			textTransform: 'uppercase',
 			letterSpacing: '.050rem',
 			borderRadius: '.25rem',
+			cursor: 'pointer',
 		},
 	},
 	breakpoints: [

@@ -8,16 +8,16 @@ const sx: StyleTypes = {
 	},
 
 	heading: {
-		fontSize: [4, 4, 5, 6, 6, 6, 7],
+		fontSize: [4, 4, 5, 6, 6, 6, 7, 7, 8],
 		lineHeight: '1.0',
 		//letterSpacing: ['auto', '.1rem'],
 	},
 	text: {
 		fontFamily: 'body',
-		fontSize: ['.875rem', '.875rem', '.875rem', 1, 1, 1, 2],
-		mt: 4,
+		fontSize: ['.875rem', '.875rem', '.875rem', 1, 1, 1, 2, 2, 3],
+		mt: [4, 4, 4, 4, 4, 4, 4, 4, 5],
 		lineHeight: '1.4',
-		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'sm', 'sm'],
+		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'sm', 'sm', 'mdx'],
 	},
 	grid: {
 		display: 'grid',
@@ -35,24 +35,11 @@ const sx: StyleTypes = {
 	},
 	row: {
 		display: 'grid',
-		maxWidth: ['sm', 'xsm'],
-		gridTemplateColumns: ['1.25fr 1fr', '1.25fr 1fr'],
+		maxWidth: ['tny', 'tny', 'tny', 'tny', 'tny', 'tny', 'sm', 'sm', 'md'],
+		gridTemplateColumns: '1.25fr 1fr',
+		columnGap: 4,
 		alignItems: 'center',
-	},
-	link: {
-		display: 'flex',
-		alignItems: 'center',
-		a: {
-			pl: [0, 0, 5, 5, 7],
-			fontWeight: 500,
-			fontFamily: 'body',
-			color: '#f7f7df',
-			textDecoration: 'none',
-			display: 'block',
-			pr: [0, 0, 0, 0, 1],
-			m: ['0 auto', '0 auto', '0'],
-			fontSize: [0, 0, 1],
-		},
+		pr: 4,
 	},
 };
 

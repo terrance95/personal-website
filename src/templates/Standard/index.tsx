@@ -30,7 +30,7 @@ const StandardTemplate = ({ data: { mdx } }: any) => {
 	}, [mdx]);
 	return (
 		<Box sx={sx.wrapper}>
-			<Header title="Writing" to="/posts" />
+			<Header title="Writings" to="/posts" />
 			<SEO title="Writings | Terrance Reynolds" />
 			<Container sx={{ py: 8 }}>
 				<Box sx={sx.post}>

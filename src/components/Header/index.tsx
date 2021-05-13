@@ -7,6 +7,7 @@ import sx from './styles';
 import Logo from '../Logo';
 import { Link } from 'gatsby';
 import '../index.css';
+import navItems from '../Navigation/navItem';
 
 type HeaderProps = {
 	title?: string;
@@ -32,6 +33,11 @@ const Header: FC<HeaderProps> = ({ title, to }) => {
 				<Box sx={sx.button} onClick={() => setMenu(!menu)}>
 					<Menu />
 				</Box>
+				{/* <Box>
+					{navItems.map((item) => {
+						return <Box>{item.title}</Box>;
+					})}
+				</Box> */}
 				{menu && <Navigation setMenu={() => setMenu(!menu)} />}
 			</Container>
 		</Box>
