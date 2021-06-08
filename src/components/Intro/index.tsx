@@ -2,6 +2,8 @@ import { Link } from 'gatsby';
 import React, { FC } from 'react';
 import { ChevronRight } from 'react-feather';
 import { Box, Button, Heading, Text } from 'theme-ui';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
 import Tag from '../Tag';
 import _sx from './styles';
 
@@ -21,10 +23,16 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 				and shapes them into one product.
 			</Text>
 
-			<Box sx={{ ..._sx.row, mt: [6, 6, 6, 8, 9] }}>
-				<Link to="/about" style={{ textDecoration: 'none' }}>
-					<Button variant="primary">About Me</Button>
-				</Link>
+			<Box sx={{ ..._sx.row, mt: [6, 6, 6, 7, 7] }}>
+				<AniLink
+					to="/about"
+					style={{ textDecoration: 'none' }}
+					cover
+					//top="entry"
+					//entryOffset={80}
+				>
+					<Button variant="primary">Read About Me</Button>
+				</AniLink>
 
 				<Link to="/posts">
 					{' '}

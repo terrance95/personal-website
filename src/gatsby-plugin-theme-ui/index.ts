@@ -71,16 +71,17 @@ const theme: ThemeTypes = {
 		primary: {
 			bg: 'primary',
 			fontFamily: 'body',
-			fontSize: [0, 0, 1, 1],
-			fontWeight: 500,
+			fontSize: [0, 0, 0, 0],
 			px: [3, 3, 3, 3, 5],
-			py: [1, 1, 2, 2],
+			py: [1, 1, 2, 3],
 			width: '100%',
 			border: '1px solid hsl(0deg 0% 100% / 5%)',
-			color: '#161616',
 			transition: 'all 200ms ease-in-out',
 			cursor: 'pointer',
+			fontWeight: 500,
 
+			color: 'background',
+			letterSpacing: '0.025rem',
 			'&:hover': {
 				bg: '#bcbcaa',
 			},
@@ -88,14 +89,20 @@ const theme: ThemeTypes = {
 		secondary: {
 			bg: '#161616',
 			fontFamily: 'body',
-			fontSize: [0, 0, 1, 1],
-			fontWeight: 500,
-			py: [1, 1, 2, 2],
+			fontSize: [0, 0, 0, 0],
+			py: [1, 1, 2, 3],
 			width: '100%',
 			border: '1px solid hsl(0deg 0% 100% / 5%)',
 			color: '#f7f7df',
 			cursor: 'pointer',
-			'&:hover': {},
+			fontWeight: 500,
+			letterSpacing: '0.025rem',
+			transition: 'all 200ms ease-in-out',
+
+			'&:hover': {
+				bg: '#111',
+				color: '#bcbcaa',
+			},
 		},
 		ghost: {
 			bg: 'rgb(247 247 223 / 0%)',

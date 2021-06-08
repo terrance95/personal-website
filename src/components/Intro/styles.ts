@@ -8,16 +8,16 @@ const sx: StyleTypes = {
 	},
 
 	heading: {
-		fontSize: [4, 4, 5, 6, 6, 6, 7, 7, 8],
+		fontSize: [4, 4, 5, 6, 6, 6, 6, 7, 8],
 		lineHeight: '1.0',
 		//letterSpacing: ['auto', '.1rem'],
 	},
 	text: {
 		fontFamily: 'body',
-		fontSize: ['.875rem', '.875rem', '.875rem', 1, 1, 1, 2, 2, 3],
+		fontSize: ['.875rem', '.875rem', '.875rem', 1, 1, 1, 1, 2, 3],
 		mt: [4, 4, 4, 4, 4, 4, 4, 4, 5],
 		lineHeight: '1.4',
-		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'sm', 'sm', 'mdx'],
+		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'xsm', 'sm', 'mdx'],
 	},
 	grid: {
 		display: 'grid',
@@ -35,7 +35,7 @@ const sx: StyleTypes = {
 	},
 	row: {
 		display: 'grid',
-		maxWidth: ['tny', 'tny', 'tny', 'tny', 'tny', 'tny', 'sm', 'sm', 'md'],
+		maxWidth: ['tny', 'tny', 'tny', 'tny', 'tny', 'tny', 'tny', 'sm', 'md'],
 		gridTemplateColumns: '1.25fr 1fr',
 		columnGap: 4,
 		alignItems: 'center',

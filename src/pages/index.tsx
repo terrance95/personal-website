@@ -41,6 +41,7 @@ const sx: StyleTypes = {
 		gridTemplateRows: 'auto 1fr auto',
 		margin: [0],
 		minHeight: ['auto', '100vh'],
+		bg: 'background',
 	},
 	grid: {
 		display: 'grid',

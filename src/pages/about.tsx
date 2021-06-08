@@ -20,15 +20,13 @@ const workExperience: Array<jobType> = [
 		company: 'Synspective',
 		position: 'Platform Engineer',
 		date: 'Apr 2020 - current',
-		description: `Software quality, scalability, and design are topics that continuously fascinate me. 
-		In the last six years of my career in software development and user interface design.`,
+		description: `Springer Nature or Springer Nature Group is a German-British academic publishing company`,
 	},
 	{
 		company: 'Springer Nature',
 		position: 'Frontend Developer',
 		date: 'Nov 2018 - Apr 2020',
-		description: `Software quality, scalability, and design are topics that continuously fascinate me. 
-		In the last six years of my career in software development and user interface design.`,
+		description: `Springer Nature or Springer Nature Group is a German-British academic publishing company`,
 	},
 	{
 		company: 'Freelance',
@@ -46,58 +44,50 @@ const AboutPage = () => {
 			<SEO title="About Me | Terrance Reynolds" />
 
 			<Container sx={{ py: 8 }}>
+				<Box sx={sx.imageContainer}>
+					<Image src={illustration} sx={sx.image} />
+				</Box>
+
 				<Box sx={sx.content}>
 					{/* @ts-ignore */}
-					<Tag sx={sx.tag}>A Piece of My Life Story</Tag>
-					<Image src={illustration} sx={sx.image} />
+
 					<Box>
 						<Text as="h1" sx={sx.heading}>
 							“We over estimate what we can do in a day but under
 							estimate what we can achieve in a decade.”
 						</Text>
 						<Text as="p">
-							Software quality, scalability, and design are topics
-							that continuously fascinate me. In the last six
-							years of my career in software development and user
-							interface design, I have equipped myself with the
-							skills to open my perspective and enhance my craft
-							to build exceptional applications and websites. As a
-							young child, I developed a passion for technology,
-							and what turned into experimentation projects
-							quickly grew into an accelerated path of innovation.
+							Software development and design are topics that
+							continuously fascinate me. In the last six years of
+							my career in software development and user interface
+							design, I have equipped myself with the skills to
+							open my perspective and enhance my craft to build
+							exceptional applications and websites. As a young
+							child, I developed a passion for technology, and
+							what turned into experimentation projects quickly
+							grew into an accelerated path of innovation.
 						</Text>
 						<Text as="p">
-							After graduating college at age 20, I devoted my
-							time and talents to my first small business based in
-							Cleveland, OH, where I assisted with various digital
-							needs and continued to expand my learning within the
-							field. Being a self-taught developer, I consciously
-							crave new information that can help in sharpening my
-							skills in all facets. In building different
-							products, I have remained curious about the future
-							of technology and how I can better understand the
-							business needs within the category.
+							After graduating college at age 20, I started my
+							first small business in Cleveland, OH, developing
+							and designing websites for clients all across the
+							world, from Hong Kong to New York. Being a
+							self-taught developer, I'm constantly perfecting my
+							craft and sharpening my skills in all areas. I
+							understand that great work requires dedication and I
+							strive to bring that value to every project and team
+							that I work on.
 						</Text>
-						<Text as="p">
-							As I’ve become more and more involved in the
-							building process of various websites and software
-							development, I’ve come to note that this line of
-							work surpasses far beyond the finished product of
-							design. With correlation to marketing, business,
-							experience, and overall development, I’ve been able
-							to adjust my thought process to encompass all
-							factors for the best possible results.
-						</Text>
+
 						<Text as="p">
 							With my ability to bridge together both worlds of
 							design and development, I’m able to not only
-							communicate a thorough incentive for various digital
-							projects but execute accordingly in a way that
-							limits concern of navigation or effectiveness. In
+							communicate a thorough strategy for stakeholders but
+							execute with precision and attention to detail. In
 							the ever-changing field of technology, my passion
-							for development only increases with the amount of
-							potential growth and opportunity I can offer a
-							company or small business.
+							for all areas of this field only increases with the
+							amount of potential value and opportunity I can
+							offer those I work with.
 						</Text>
 
 						<Text as="p">
@@ -105,12 +95,14 @@ const AboutPage = () => {
 							personally and professionally, I use this time
 							wisely to push myself even further to perfect my
 							craft. This field has allowed me to express my
-							creativity and knowledge in ways that alter the
-							perspective of digital experiences.
+							creativity and knowledge in ways I could have never
+							imagined. As I continue my career, I plan to excel
+							and push myself with every new project and challenge
+							I face.
 						</Text>
 					</Box>
 					<Box sx={sx.line} />
-					<Box>
+					{/* <Box>
 						<Text as="h2" sx={sx.h2}>
 							Work Experience
 						</Text>
@@ -124,7 +116,7 @@ const AboutPage = () => {
 										<Box>
 											<Box
 												sx={{
-													mt: [4, 4, 4, 0],
+													mt: [3, 3, 3, 0],
 													display: 'flex',
 													flexDirection: 'row',
 												}}
@@ -151,10 +143,11 @@ const AboutPage = () => {
 								);
 							})}
 						</Box>
-					</Box>
+					</Box> */}
 
 					<Box sx={sx.buttons}>
-						<Button variant="primary">Contact Me</Button>
+						<Button variant="primary">Email Me</Button>
+						<Button variant="secondary">Request Full Resume</Button>
 					</Box>
 				</Box>
 			</Container>
@@ -178,19 +171,20 @@ const sx: StyleTypes = {
 	content: {
 		display: 'grid',
 		justifyContent: 'center',
-		maxWidth: 'lg',
+		maxWidth: ['xlg', 'xlg', 'lg', 'lg', 'lg', 'lg', 'lg', 'lg', 'xxlg'],
 		margin: '0 auto',
 		p: {
-			mb: 5,
-			fontSize: [1, 1, 1, 2],
+			mb: [4, 4, 4, 4, 4, 4, 4, 4, 7],
+			fontSize: [1, 1, 1, 2, 2, 2, 2, 2, 3],
 			lineHeight: 1.5,
 		},
 	},
 	heading: {
 		fontFamily: 'heading',
-		fontSize: [2, 2, 3, 3],
-		lineHeight: 1.15,
-		py: [2, 2, 4, 4],
+		fontSize: [2, 2, '1.4rem', 5, 5, 5, 5, 5, 6],
+		lineHeight: 1.1,
+		py: [3, 3, 5, 6, 6, 6, 6, 6, 8],
+		px: [3, 3, 3, 4],
 	},
 	h2: {
 		mt: 4,
@@ -206,17 +200,22 @@ const sx: StyleTypes = {
 		fontFamily: 'heading',
 	},
 	tag: {
-		mt: [1, 1, 1, 8],
-		mb: [6, 6, 6, 8],
+		my: [2, 2, 2, 8],
 	},
 	buttons: {
 		mt: 4,
-
+		display: 'grid',
+		gridTemplateColumns: '1fr 1fr',
+		columnGap: 5,
 		mb: 8,
 	},
-	image: {
-		pb: [0, 0, 0, 2],
+	imageContainer: {
+		display: 'grid',
+		justifyContent: 'center',
+		maxWidth: '100%',
+		margin: '0 auto',
 	},
+	image: {},
 	line: {
 		display: 'flex',
 		borderBottom: '1px solid #191917',
