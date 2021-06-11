@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 import Tag from '../components/Tag';
 import { Link } from 'gatsby';
 
-const illustration = require('../images/illustration-2-min.jpg');
+const illustration = require('../images/Illustration-2-min.jpg');
 
 type jobType = {
 	company: string;
