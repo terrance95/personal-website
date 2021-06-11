@@ -7,7 +7,7 @@ const sx: StyleTypes = {
 	},
 	heading: {
 		fontFamily: 'heading',
-		fontSize: 5,
+		fontSize: [4, 4, 4, 6, 6],
 		mb: 4,
 		lineHeight: 1.1,
 	},
@@ -27,7 +27,7 @@ const sx: StyleTypes = {
 	},
 	tag: {
 		mt: [4, 4, 6, 8],
-		mb: 6,
+		mb: 4,
 		span: {
 			fontSize: 0,
 		},

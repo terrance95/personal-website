@@ -109,7 +109,6 @@ const AboutPage = () => {
 						</Text>
 						<Text
 							sx={{
-								pt: 6,
 								pb: [4, 4, 4, 4, 4, 4, 4, 4, 8],
 								fontSize: [1, 1, 1, 2, 2, 2, 2, 2, 3],
 								lineHeight: 1.5,
@@ -209,8 +208,8 @@ const sx: StyleTypes = {
 		px: [3, 3, 3, 4],
 	},
 	h2: {
-		mt: 4,
-		fontSize: 4,
+		my: 4,
+		fontSize: [3, 3, 3, 3, 4],
 		fontFamily: 'heading',
 	},
 	h3: {

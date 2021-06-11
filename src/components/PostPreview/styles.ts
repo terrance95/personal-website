@@ -7,7 +7,7 @@ const sx: StyleTypes = {
 		//borderBottom: '1px solid #191917',
 	},
 	heading: {
-		fontSize: 5,
+		fontSize: 4,
 		fontFamily: 'heading',
 		letterSpacing: '0.0125rem',
 		mb: 4,
