@@ -11,11 +11,8 @@ import sx from './styles';
 import Image from 'gatsby-image';
 
 const FeaturedTemplate = ({ data: { mdx } }: any) => {
-	const featuredImage = mdx.frontmatter.featuredImage.childImageSharp.fluid;
+	// const featuredImage = mdx.frontmatter.featuredImage.childImageSharp.fluid;
 
-	useEffect(() => {
-		console.log(featuredImage);
-	}, [mdx]);
 	return (
 		<Box sx={sx.wrapper}>
 			<Header title="Writing" to="/posts" />
@@ -27,13 +24,13 @@ const FeaturedTemplate = ({ data: { mdx } }: any) => {
 				<Box sx={sx.postHeader}>
 					<Tag>Personal Life</Tag>
 					<Text as="h1" sx={sx.heading}>
-						{mdx.frontmatter.title}
+						{mdx?.frontmatter?.title}
 					</Text>
 					<Text as="p" sx={sx.excerpt}>
 						{mdx.frontmatter.excerpt}
 					</Text>
 				</Box>
-				<Image fluid={featuredImage} />
+				{/* <Image fluid={featuredImage} /> */}
 				{/**
 				 * MDX CONTENT
 				 */}
@@ -46,26 +43,26 @@ const FeaturedTemplate = ({ data: { mdx } }: any) => {
 	);
 };
 
-export const query = graphql`
-	query($slug: String) {
-		mdx(frontmatter: { slug: { eq: $slug } }) {
-			frontmatter {
-				title
-				category
-				author
-				date
-				excerpt
-				featuredImage {
-					childImageSharp {
-						fluid {
-							...GatsbyImageSharpFluid
-						}
-					}
-				}
-			}
-			body
-		}
-	}
-`;
+// export const query = graphql`
+// 	query($slug: String) {
+// 		mdx(frontmatter: { slug: { eq: $slug } }) {
+// 			frontmatter {
+// 				title
+// 				category
+// 				author
+// 				date
+// 				excerpt
+// 				featuredImage {
+// 					childImageSharp {
+// 						fluid {
+// 							...GatsbyImageSharpFluid
+// 						}
+// 					}
+// 				}
+// 			}
+// 			body
+// 		}
+// 	}
+// `;
 
 export default FeaturedTemplate;

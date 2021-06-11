@@ -1,14 +1,16 @@
 const sx: StyleTypes = {
 	wrapper: {
 		mt: 1,
-		mb: 7,
+
+		py: 6,
 		maxWidth: 'xlg',
+		//borderBottom: '1px solid #191917',
 	},
 	heading: {
-		fontSize: 3,
+		fontSize: 5,
 		fontFamily: 'heading',
 		letterSpacing: '0.0125rem',
-		mb: 2,
+		mb: 4,
 		lineHeight: 1.1,
 	},
 	category: {
@@ -19,7 +21,7 @@ const sx: StyleTypes = {
 		display: 'block',
 	},
 	text: {
-		fontSize: 1,
+		fontSize: 2,
 		lineHeight: 1.5,
 	},
 };

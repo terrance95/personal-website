@@ -21,15 +21,9 @@ const Header: FC<HeaderProps> = ({ title, to }) => {
 	return (
 		<Box as="header" sx={sx.wrapper}>
 			<Container sx={sx.flex}>
-				<AniLink
-					to="/"
-					style={{ textDecoration: 'none' }}
-					cover
-					direction="down"
-					bg="#0B0B0B"
-				>
+				<Link to="/" style={{ textDecoration: 'none' }}>
 					<Logo />
-				</AniLink>
+				</Link>
 				{title && (
 					<Box sx={sx.title}>
 						<Link to={to ? `${to.toLowerCase()}` : '/'}>

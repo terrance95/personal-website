@@ -5,9 +5,10 @@ export type navItemsType = {
 
 const navItems: navItemsType[] = [
 	{ title: 'Home', to: '/' },
-	{ title: 'Writings', to: '/posts' },
-	{ title: 'Side Hustles', to: '#' },
 	{ title: 'About Me', to: '/about' },
+	{ title: 'Writings', to: '/posts' },
+
+	{ title: 'Contact', to: '#' },
 ];
 
 export default navItems;

@@ -5,8 +5,9 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SEO from '../components/SEO';
 import Tag from '../components/Tag';
+import { Link } from 'gatsby';
 
-const illustration = require('../images/illustration.jpg');
+const illustration = require('../images/illustration-2-min.jpg');
 
 type jobType = {
 	company: string;
@@ -43,7 +44,7 @@ const AboutPage = () => {
 			<Header title="About Me" />
 			<SEO title="About Me | Terrance Reynolds" />
 
-			<Container sx={{ py: 8 }}>
+			<Container sx={{ py: 4 }}>
 				<Box sx={sx.imageContainer}>
 					<Image src={illustration} sx={sx.image} />
 				</Box>
@@ -102,6 +103,24 @@ const AboutPage = () => {
 						</Text>
 					</Box>
 					<Box sx={sx.line} />
+					<Box>
+						<Text as="h2" sx={sx.h2}>
+							Contact Me
+						</Text>
+						<Text
+							sx={{
+								pt: 6,
+								pb: [4, 4, 4, 4, 4, 4, 4, 4, 8],
+								fontSize: [1, 1, 1, 2, 2, 2, 2, 2, 3],
+								lineHeight: 1.5,
+							}}
+						>
+							If you would like together, please choose from the
+							options below. A brief introduction of who you are
+							and how I can help you would be greatly appreciate.
+							I contact you as soon as I can.
+						</Text>
+					</Box>
 					{/* <Box>
 						<Text as="h2" sx={sx.h2}>
 							Work Experience
@@ -146,8 +165,11 @@ const AboutPage = () => {
 					</Box> */}
 
 					<Box sx={sx.buttons}>
-						<Button variant="primary">Email Me</Button>
-						<Button variant="secondary">Request Full Resume</Button>
+						<a href="mailto:hello@terrancereynolds.com">
+							<Button variant="primary">Send An Email</Button>
+						</a>
+
+						{/* <Button variant="secondary">Request Full Resume</Button> */}
 					</Box>
 				</Box>
 			</Container>
@@ -188,7 +210,7 @@ const sx: StyleTypes = {
 	},
 	h2: {
 		mt: 4,
-		fontSize: 3,
+		fontSize: 4,
 		fontFamily: 'heading',
 	},
 	h3: {
@@ -204,9 +226,9 @@ const sx: StyleTypes = {
 	},
 	buttons: {
 		mt: 4,
-		display: 'grid',
-		gridTemplateColumns: '1fr 1fr',
-		columnGap: 5,
+		// display: 'grid',
+		// gridTemplateColumns: '1fr 1fr',
+		// columnGap: 5,
 		mb: 8,
 	},
 	imageContainer: {

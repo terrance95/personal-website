@@ -32,7 +32,7 @@ const StandardTemplate = ({ data: { mdx } }: any) => {
 		<Box sx={sx.wrapper}>
 			<Header title="Writings" to="/posts" />
 			<SEO title="Writings | Terrance Reynolds" />
-			<Container sx={{ py: 8 }}>
+			<Container sx={{ pt: 8, pb: 9 }}>
 				<Box sx={sx.post}>
 					<Box>
 						<Link to="/posts" style={{ textDecoration: 'none' }}>
@@ -47,22 +47,6 @@ const StandardTemplate = ({ data: { mdx } }: any) => {
 					<Text as="h1" sx={sx.heading}>
 						{mdx.frontmatter.title}
 					</Text>
-					<Box
-						sx={{
-							display: 'flex',
-							borderBottom: '1px solid #191917',
-							pb: 4,
-							mb: 4,
-
-							'*': {
-								mr: 4,
-							},
-						}}
-					>
-						<Text>By: {mdx.frontmatter.author}</Text>
-						<Box>|</Box>
-						<Text> {mdx.frontmatter.date}</Text>
-					</Box>
 
 					<Box sx={sx.body}>
 						<MDXRenderer>{mdx.body}</MDXRenderer>

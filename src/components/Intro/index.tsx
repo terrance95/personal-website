@@ -17,26 +17,19 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 				A Difference
 				<br /> of Perspective
 			</Heading>
-			<Text sx={_sx.text}>
+			<Text sx={_sx.text} as="p">
 				A software developer with a background in design and
 				understanding of business. My work balances these perspectives
 				and shapes them into one product.
 			</Text>
 
 			<Box sx={{ ..._sx.row, mt: [6, 6, 6, 7, 7] }}>
-				<AniLink
-					to="/about"
-					style={{ textDecoration: 'none' }}
-					cover
-					//top="entry"
-					//entryOffset={80}
-				>
+				<Link to="/about" style={{ textDecoration: 'none' }}>
 					<Button variant="primary">Read About Me</Button>
-				</AniLink>
+				</Link>
 
 				<Link to="/posts">
-					{' '}
-					<Button variant="secondary">View Writings</Button>
+					<Button variant="secondary">My Writings</Button>
 				</Link>
 			</Box>
 		</Box>

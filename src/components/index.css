@@ -67,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Founders Grotesk Condensed';
+	font-family: 'Founders Grotesk Condensed' !important;
 	color: #f7f7df;
 	text-transform: uppercase;
 }

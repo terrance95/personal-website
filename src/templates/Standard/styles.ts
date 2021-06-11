@@ -7,25 +7,27 @@ const sx: StyleTypes = {
 	},
 	heading: {
 		fontFamily: 'heading',
-		fontSize: 4,
+		fontSize: 5,
 		mb: 4,
 		lineHeight: 1.1,
 	},
 	post: {
 		margin: '0 auto',
-		maxWidth: 'lg',
+		maxWidth: 'xlg',
 	},
 	body: {
 		fontSize: [1, 1, 1, 2],
 		lineHeight: 1.5,
 		// h2: { letterSpacing: '0.0250rem' },
+		fontFamily: `'Founders Grotesk'`,
 		p: {
 			my: 5,
+			fontFamily: `'Founders Grotesk'`,
 		},
 	},
 	tag: {
 		mt: [4, 4, 6, 8],
-		mb: 5,
+		mb: 6,
 		span: {
 			fontSize: 0,
 		},
