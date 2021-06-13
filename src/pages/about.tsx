@@ -96,7 +96,7 @@ const AboutPage = () => {
 
 					<Box sx={sx.buttons}>
 						<a href="mailto:hello@terrancereynolds.com">
-							<Button variant="primary">
+							<Button variant="primary" sx={{ mb: 8 }}>
 								<Mail />
 								Send An Email
 							</Button>
@@ -159,7 +159,7 @@ const sx: StyleTypes = {
 	},
 	buttons: {
 		mt: [4],
-		mb: 8,
+
 		button: {
 			display: 'flex',
 			alignContent: 'center',
