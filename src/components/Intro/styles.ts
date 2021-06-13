@@ -14,7 +14,7 @@ const sx: StyleTypes = {
 	},
 	text: {
 		fontFamily: 'body',
-		fontSize: ['.875rem', '.875rem', '.875rem', 1, 1, 1, 1, 2, 3],
+		fontSize: [1, 1, 1, 1, 1, 1, 1, 2, 3],
 		mt: [4, 4, 4, 4, 4, 4, 4, 4, 5],
 		lineHeight: '1.4',
 		maxWidth: ['md', 'tny', 'tny', 'sm', 'sm', 'xsm', 'xsm', 'sm', 'mdx'],

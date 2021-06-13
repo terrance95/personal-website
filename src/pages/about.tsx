@@ -6,37 +6,9 @@ import Header from '../components/Header';
 import SEO from '../components/SEO';
 import Tag from '../components/Tag';
 import { Link } from 'gatsby';
+import { Mail, Send } from 'react-feather';
 
 const illustration = require('../images/Illustration-2-min.jpg');
-
-type jobType = {
-	company: string;
-	position: string;
-	date: string;
-	description: string;
-};
-
-const workExperience: Array<jobType> = [
-	{
-		company: 'Synspective',
-		position: 'Platform Engineer',
-		date: 'Apr 2020 - current',
-		description: `Springer Nature or Springer Nature Group is a German-British academic publishing company`,
-	},
-	{
-		company: 'Springer Nature',
-		position: 'Frontend Developer',
-		date: 'Nov 2018 - Apr 2020',
-		description: `Springer Nature or Springer Nature Group is a German-British academic publishing company`,
-	},
-	{
-		company: 'Freelance',
-		position: 'Web Designer',
-		date: 'Nov 2015 - Apr 2018',
-		description: `Software quality, scalability, and design are topics that continuously fascinate me. 
-		In the last six years of my career in software development and user interface design.`,
-	},
-];
 
 const AboutPage = () => {
 	return (
@@ -102,9 +74,10 @@ const AboutPage = () => {
 							I face.
 						</Text>
 					</Box>
+
 					<Box sx={sx.line} />
 					<Box>
-						<Text as="h2" sx={sx.h2}>
+						<Text as="h2" sx={sx.contactText}>
 							Contact Me
 						</Text>
 						<Text
@@ -120,55 +93,16 @@ const AboutPage = () => {
 							I contact you as soon as I can.
 						</Text>
 					</Box>
-					{/* <Box>
-						<Text as="h2" sx={sx.h2}>
-							Work Experience
-						</Text>
-						<Box sx={{ mt: 8 }}>
-							{workExperience.map((job: jobType) => {
-								return (
-									<Box sx={sx.grid}>
-										<Text as="h3" sx={sx.h3}>
-											{job.company}
-										</Text>
-										<Box>
-											<Box
-												sx={{
-													mt: [3, 3, 3, 0],
-													display: 'flex',
-													flexDirection: 'row',
-												}}
-											>
-												<Text as="h3" sx={sx.h4}>
-													{job.position}
-												</Text>
-												<Text
-													sx={{
-														pl: 4,
-														color: '#747474',
-														fontSize: 0,
-													}}
-												>
-													{job.date}
-												</Text>
-											</Box>
-
-											<Text sx={{ mt: 4 }}>
-												{job.description}
-											</Text>
-										</Box>
-									</Box>
-								);
-							})}
-						</Box>
-					</Box> */}
 
 					<Box sx={sx.buttons}>
 						<a href="mailto:hello@terrancereynolds.com">
-							<Button variant="primary">Send An Email</Button>
+							<Button variant="primary">
+								<Mail />
+								Send An Email
+							</Button>
 						</a>
 
-						{/* <Button variant="secondary">Request Full Resume</Button> */}
+						<Button variant="ghost">View Resume</Button>
 					</Box>
 				</Box>
 			</Container>
@@ -207,9 +141,9 @@ const sx: StyleTypes = {
 		py: [3, 3, 5, 6, 6, 6, 6, 6, 8],
 		px: [3, 3, 3, 4],
 	},
-	h2: {
-		my: 4,
-		fontSize: [3, 3, 3, 3, 4],
+	contactText: {
+		my: [4, 4, 4, 4, 4, 4, 4, 5, 6],
+		fontSize: [3, 3, 3, 3, 4, 4, 4, 4, 5],
 		fontFamily: 'heading',
 	},
 	h3: {
@@ -217,18 +151,30 @@ const sx: StyleTypes = {
 		fontFamily: 'heading',
 	},
 	h4: {
-		fontSize: 1,
+		fontSize: 2,
 		fontFamily: 'heading',
 	},
 	tag: {
 		my: [2, 2, 2, 8],
 	},
 	buttons: {
-		mt: 4,
-		// display: 'grid',
-		// gridTemplateColumns: '1fr 1fr',
-		// columnGap: 5,
+		mt: [4],
 		mb: 8,
+		button: {
+			display: 'flex',
+			alignContent: 'center',
+			alignItems: 'center',
+			justifyContent: 'center',
+			mb: 4,
+		},
+		a: {
+			textDecoration: 'none',
+			margin: '0 auto',
+		},
+		svg: {
+			width: '1rem',
+			mr: 2,
+		},
 	},
 	imageContainer: {
 		display: 'grid',
@@ -236,7 +182,6 @@ const sx: StyleTypes = {
 		maxWidth: '100%',
 		margin: '0 auto',
 	},
-	image: {},
 	line: {
 		display: 'flex',
 		borderBottom: '1px solid #191917',
@@ -247,6 +192,7 @@ const sx: StyleTypes = {
 			mr: 4,
 		},
 	},
+	description: {},
 };
 
 export default AboutPage;

@@ -16,7 +16,7 @@ const PostPreview: FC<PostPreviewTypes> = forwardRef(
 		return (
 			<Box sx={sx.wrapper} ref={ref}>
 				{/* @ts-ignore */}
-				{/* <Tag sx={sx.category}>{category}</Tag> */}
+				<Tag sx={sx.category}>{category}</Tag>
 
 				<Link to={slug} style={{ textDecoration: 'none' }}>
 					<Text as="h3" sx={sx.heading}>

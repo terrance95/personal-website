@@ -11,7 +11,9 @@ const IndexPage = () => {
 	return (
 		<Box sx={sx.wrapper}>
 			<SEO title="Home | Terrance Reynolds" />
+
 			<Header />
+
 			<Box>
 				<Container>
 					<Box sx={sx.grid}>

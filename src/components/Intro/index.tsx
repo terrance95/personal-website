@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import React, { FC } from 'react';
 import { ChevronRight } from 'react-feather';
 import { Box, Button, Heading, Text } from 'theme-ui';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import Tag from '../Tag';
 import _sx from './styles';
@@ -18,9 +17,8 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 				<br /> of Perspective
 			</Heading>
 			<Text sx={_sx.text} as="p">
-				A software developer with a background in design and
-				understanding of business. My work balances these perspectives
-				and shapes them into one product.
+				With over six years of design and development experience, my
+				work focuses on creating well-crafted UI's for the web.
 			</Text>
 
 			<Box sx={{ ..._sx.row, mt: [6, 6, 6, 7, 7] }}>

@@ -4,10 +4,10 @@ const sx: StyleTypes = {
 
 		py: 6,
 		maxWidth: 'xlg',
-		//borderBottom: '1px solid #191917',
+		borderBottom: '1px solid #191917',
 	},
 	heading: {
-		fontSize: 4,
+		fontSize: [3, 3, 3, 3, 4],
 		fontFamily: 'heading',
 		letterSpacing: '0.0125rem',
 		mb: 4,
@@ -21,7 +21,7 @@ const sx: StyleTypes = {
 		display: 'block',
 	},
 	text: {
-		fontSize: 2,
+		fontSize: [1, 1, 1, 1, 2],
 		lineHeight: 1.5,
 	},
 };
