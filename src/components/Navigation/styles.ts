@@ -28,10 +28,10 @@ const sx: StyleTypes = {
 			color: 'muted',
 			textDecoration: 'none',
 			fontFamily: 'Founders Grotesk Condensed',
-			fontSize: [4, 4, 5, 5],
+			fontSize: [4, 4, 5, 5, 7],
 			display: 'inline-block',
 			textTransform: 'uppercase',
-			pb: [5, 5, 6, 6],
+			pb: [5, 5, 6, 6, 8],
 		},
 	},
 	close: {

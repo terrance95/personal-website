@@ -29,6 +29,7 @@ const AboutPage = () => {
 							“We over estimate what we can do in a day but under
 							estimate what we can achieve in a decade.”
 						</Text>
+
 						<Text as="p">
 							Software development and design are topics that
 							continuously fascinate me. In the last six years of
@@ -73,6 +74,19 @@ const AboutPage = () => {
 							and push myself with every new project and challenge
 							I face.
 						</Text>
+						<Box sx={{ mt: 5 }}>
+							<Box sx={sx.videoContainer}>
+								<iframe
+									width="100%"
+									height="360"
+									src="https://www.youtube.com/embed/PC4qqUSjpqA"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+							</Box>
+						</Box>
 					</Box>
 
 					<Box sx={sx.line} />
@@ -101,8 +115,14 @@ const AboutPage = () => {
 								Send An Email
 							</Button>
 						</a>
-
-						<Button variant="ghost">View Resume</Button>
+						<a
+							href="https://www.linkedin.com/in/terrancereynolds/"
+							target="_blank"
+						>
+							<Button variant="ghost">
+								View Work Experience
+							</Button>
+						</a>
 					</Box>
 				</Box>
 			</Container>
@@ -134,6 +154,19 @@ const sx: StyleTypes = {
 			lineHeight: 1.5,
 		},
 	},
+	videoContainer: {
+		pb: '56.25%',
+		height: 0,
+		position: 'relative',
+		mb: 2,
+		iframe: {
+			position: 'absolute',
+			top: 0,
+			left: 0,
+			width: '100%',
+			height: '100%',
+		},
+	},
 	heading: {
 		fontFamily: 'heading',
 		fontSize: [2, 2, '1.4rem', 5, 5, 5, 5, 5, 6],
@@ -142,7 +175,7 @@ const sx: StyleTypes = {
 		px: [3, 3, 3, 4],
 	},
 	contactText: {
-		my: [4, 4, 4, 4, 4, 4, 4, 5, 6],
+		my: [4, 4, 4, 4, 4, 4, 4],
 		fontSize: [3, 3, 3, 3, 4, 4, 4, 4, 5],
 		fontFamily: 'heading',
 	},
@@ -159,7 +192,7 @@ const sx: StyleTypes = {
 	},
 	buttons: {
 		mt: [4],
-
+		mb: 8,
 		button: {
 			display: 'flex',
 			alignContent: 'center',
@@ -187,12 +220,10 @@ const sx: StyleTypes = {
 		borderBottom: '1px solid #191917',
 		pb: 4,
 		mb: 4,
-
 		'*': {
 			mr: 4,
 		},
 	},
-	description: {},
 };
 
 export default AboutPage;

@@ -1,5 +1,5 @@
 ---
-title: 'Automating School Closings'
+title: 'Snow Day App: Automating School Closings'
 slug: snow-day
 category: Development
 author: 'Terrance Reynolds'
@@ -9,6 +9,8 @@ excerpt:
     with an awesome idea on how we could improve one of our biggest education
     client’s experience with our platform.'
 ---
+
+![Image of App](https://miro.medium.com/max/1400/1*AUdCqfxT1XCVRtU1Bik4DA.gif)
 
 Earlier this winter, a colleague of mine at Jetpack Group approached me with an
 awesome idea on how we could improve one of our biggest education client’s
@@ -26,3 +28,53 @@ as timely as possible, for the students and their families is a daunting task.
 My colleague’s solution was to build a simple mobile app, where a school
 administrator could roll out of bed, and with one-click update all of the
 websites.
+
+## Solution
+
+Build a simple API that sits between the website and a React Native (iOS and
+Android) app. The website listens to any changes in the API and the mobile app
+updates it.
+
+## Technical Overview
+
+### API
+
+For the speed of deployment, we decided to use LoopBack. With it’s CLI tool, we
+had the API ready within a few minutes. We then connected to a cloud MongoDB for
+the database source and added some authentication features to get a live RESTful
+API ready to make some requests.
+
+### Website
+
+For the speed of deployment, we decided to use LoopBack. With it’s CLI tool, we
+had the API ready within a few minutes. We then connected to a cloud MongoDB for
+the database source and added some authentication features to get a live RESTful
+API ready to make some requests.
+
+### React Native
+
+Under the hood, the React Native primary completes two tasks. When
+ComponentDidMount runs, it checks the status of the API, set state to the
+retrieve value, and renders the appropriate view. Once rendered, the school
+admin can press a button that sends a PATCH request to the API with a true or
+false value, while updating the internal state between each toggle.
+
+## UI/UX
+
+While designing this single-purpose app, there were two primary considerations
+we wanted to keep in mind: Feedback and Rewards. We wanted to give the school
+admin enough visual cues to feel confident the app worked in updating the
+website. Several cues were added to the app to give such feedback:
+
+-   A status bar inside the card to confirm the state of the snow day.
+-   A pulsing button to indicate when the state is active.
+-   A snowfall animation for additional feedback and to reward the school admin
+    for clicking.
+
+## Final Thoughts
+
+The app will be privately distributed to our school admin and we look forward to
+hearing their feedback. We have a few ideas on the table on how to broaden the
+scope of the project and add a few more useful features now that the initial
+setup is complete. As for the parents and students, we hope we delivered a
+faster way to alert them so they can better plan their day.

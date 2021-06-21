@@ -50,14 +50,15 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 				<Box
 					sx={{
 						bg: 'primary',
-						width: ['16rem', '18rem'],
-						height: ['16rem', '18rem'],
+						width: ['16rem', '16rem'],
+						height: ['16rem', '16rem'],
 						top: '50%',
 						left: '50%',
 						position: 'absolute',
 						transform: 'translate(-50%, -50%)',
 						opacity: [0.1, 0.05],
-						filter: 'blur(4rem)',
+						filter: 'blur(100rem)',
+						//borderRadius: '50%',
 						zIndex: 0,
 					}}
 				/>{' '}
