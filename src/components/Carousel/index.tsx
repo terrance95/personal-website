@@ -11,9 +11,6 @@ const Carousel: FC<ExtendStyles & { data: any }> = ({
 		allImageSharp: { edges },
 	},
 }) => {
-	useEffect(() => {
-		console.log(edges);
-	});
 	return (
 		<Box
 			sx={{
