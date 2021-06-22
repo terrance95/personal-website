@@ -25,9 +25,6 @@ export const query = graphql`
 `;
 
 const StandardTemplate = ({ data: { mdx } }: any) => {
-	useEffect(() => {
-		console.log(mdx);
-	}, [mdx]);
 	return (
 		<Box sx={sx.wrapper}>
 			<Header title="Writings" to="/posts" />

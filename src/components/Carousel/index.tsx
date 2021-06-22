@@ -1,16 +1,19 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Box } from 'theme-ui';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-const gallery = [
-	require('../../images/terrance-3-min.jpg'),
-	require('../../images/terrance-1-min.jpg'),
-	require('../../images/terrance-5-min.jpg'),
-	require('../../images/terrance-2-min.jpg'),
-];
-
-const Carousel: FC<ExtendStyles> = ({ sx }) => {
+const Carousel: FC<ExtendStyles & { data: any }> = ({
+	sx,
+	data: {
+		allImageSharp: { edges },
+	},
+}) => {
+	useEffect(() => {
+		console.log(edges);
+	});
 	return (
 		<Box
 			sx={{
@@ -32,14 +35,15 @@ const Carousel: FC<ExtendStyles> = ({ sx }) => {
 				infinite
 			>
 				<Slider>
-					{gallery.map((photo, key) => {
+					{edges.map((photo: any, key: number) => {
+						console.log(photo);
 						return (
 							<Slide index={key} key={key}>
-								<Image
-									src={photo}
-									hasMasterSpinner
+								<Img
+									fluid={photo.node.fluid}
+									//hasMasterSpinner
 									style={{
-										height: '98%',
+										height: '100%',
 										objectFit: 'cover',
 										objectPosition: 'center center',
 									}}
