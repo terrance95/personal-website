@@ -49,6 +49,7 @@ module.exports = {
 						src: '/icon-512.png',
 						size: `512x512`,
 						type: 'image/png',
+						purpose: 'any maskable',
 					},
 					{
 						src: '/icon-192.png',
