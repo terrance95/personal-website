@@ -9,23 +9,9 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import { Mail, Send } from 'react-feather';
 import Img from 'gatsby-image';
 
-const illustration = require('../images/illustration-2-min.jpg');
+const illustration = require('../images/illustration-min.jpg');
 
-export const query = graphql`
-	query Illustration {
-		file(relativePath: { eq: "illustration-2-min.jpg" }) {
-			childImageSharp {
-				fluid(maxWidth: 2800) {
-					...GatsbyImageSharpFluid
-					...GatsbyImageSharpFluidLimitPresentationSize
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-		}
-	}
-`;
-
-const AboutPage = ({ data }) => {
+const AboutPage = () => {
 	return (
 		<Box sx={sx.wrapper}>
 			<Header title="About Me" />
