@@ -43,9 +43,8 @@ module.exports = {
 				start_url: `/`,
 				background_color: `#0B0B0B`,
 				theme_color: `#0B0B0B`,
-				display: `minimal-ui`,
+				display: `standalone`,
 				scope: '/',
-
 				icons: [
 					{
 						src: '/icon-512.png',
