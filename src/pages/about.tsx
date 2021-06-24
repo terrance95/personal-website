@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Button, Text, Image } from 'theme-ui';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SEO from '../components/SEO';
 import Tag from '../components/Tag';
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import { Mail, Send } from 'react-feather';
+import Img from 'gatsby-image';
 
-const illustration = require('../images/Illustration-2-min.jpg');
+const illustration = require('../images/illustration-2-min.jpg');
 
-const AboutPage = () => {
+export const query = graphql`
+	query Illustration {
+		file(relativePath: { eq: "illustration-2-min.jpg" }) {
+			childImageSharp {
+				fluid(maxWidth: 2800) {
+					...GatsbyImageSharpFluid
+					...GatsbyImageSharpFluidLimitPresentationSize
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
+	}
+`;
+
+const AboutPage = ({ data }) => {
 	return (
 		<Box sx={sx.wrapper}>
 			<Header title="About Me" />
@@ -18,7 +33,7 @@ const AboutPage = () => {
 
 			<Container sx={{ py: 4 }}>
 				<Box sx={sx.imageContainer}>
-					<Image src={illustration} sx={sx.image} />
+					<Image src={illustration} />
 				</Box>
 
 				<Box sx={sx.content}>
@@ -81,10 +96,9 @@ const AboutPage = () => {
 									height="360"
 									src="https://www.youtube.com/embed/PC4qqUSjpqA"
 									title="YouTube video player"
-									//@ts-ignore
-									frameborder="0"
+									frameBorder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen
+									allowFullScreen
 								></iframe>
 							</Box>
 						</Box>
@@ -150,7 +164,7 @@ const sx: StyleTypes = {
 		maxWidth: ['xlg', 'xlg', 'lg', 'lg', 'lg', 'lg', 'lg', 'lg', 'xxlg'],
 		margin: '0 auto',
 		p: {
-			mb: [4, 4, 4, 4, 4, 4, 4, 4, 7],
+			mb: [4, 4, 4, 4, 4, 4, 4, 4, 6],
 			fontSize: [1, 1, 1, 2, 2, 2, 2, 2, 3],
 			lineHeight: 1.5,
 		},
@@ -193,13 +207,13 @@ const sx: StyleTypes = {
 	},
 	buttons: {
 		mt: [4],
-		mb: 8,
+		mb: 4,
 		button: {
 			display: 'flex',
 			alignContent: 'center',
 			alignItems: 'center',
 			justifyContent: 'center',
-			mb: 4,
+			mb: 3,
 		},
 		a: {
 			textDecoration: 'none',
@@ -215,6 +229,7 @@ const sx: StyleTypes = {
 		justifyContent: 'center',
 		maxWidth: '100%',
 		margin: '0 auto',
+		width: '100%',
 	},
 	line: {
 		display: 'flex',

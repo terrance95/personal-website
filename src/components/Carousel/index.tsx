@@ -31,9 +31,8 @@ const Carousel: FC<ExtendStyles & { data: any }> = ({
 				isPlaying
 				infinite
 			>
-				<Slider>
+				<Slider aria-label="slider">
 					{edges.map((photo: any, key: number) => {
-						console.log(photo);
 						return (
 							<Slide index={key} key={key}>
 								<Img

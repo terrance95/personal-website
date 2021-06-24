@@ -11,6 +11,11 @@ const sx: StyleTypes = {
 		letterSpacing: '0.0125rem',
 		mb: 4,
 		lineHeight: 1.1,
+		transition: 'all 200ms ease-in-out',
+
+		'&:hover': {
+			color: '#bcbcaa',
+		},
 	},
 	category: {
 		fontSize: 0,
@@ -22,6 +27,10 @@ const sx: StyleTypes = {
 	text: {
 		fontSize: [1, 1, 1, 1, 2],
 		lineHeight: 1.5,
+	},
+	readMore: {
+		mt: 6,
+		color: 'text',
 	},
 };
 

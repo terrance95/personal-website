@@ -18,20 +18,12 @@ const sx: StyleTypes = {
 	body: {
 		fontSize: [1, 1, 1, 2],
 		lineHeight: 1.5,
-		// h2: { letterSpacing: '0.0250rem' },
 		fontFamily: `'Founders Grotesk'`,
 		img: {
 			width: '100%',
 			py: 4,
 		},
-		h2: {
-			my: 2,
-		},
-		h3: {
-			my: 2,
-		},
 		p: {
-			my: 5,
 			fontFamily: `'Founders Grotesk'`,
 			lineHeight: 1.5,
 		},

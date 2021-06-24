@@ -64,10 +64,13 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 				/>{' '}
 				<Box sx={sx.menu}>
 					<Box>
-						{navItems.map((item: navItemsType) => {
+						{navItems.map((item: navItemsType, key: number) => {
 							if (item.title === 'Contact') {
 								return (
-									<a href="mailto:hello@terrancereynolds.com">
+									<a
+										key={key}
+										href="mailto:hello@terrancereynolds.com"
+									>
 										<Box sx={sx.link}>{item.title}</Box>
 									</a>
 								);

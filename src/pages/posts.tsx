@@ -1,3 +1,4 @@
+import { number } from 'prop-types';
 import * as React from 'react';
 import { Box, Text } from 'theme-ui';
 import Container from '../components/Container';
@@ -15,10 +16,10 @@ const PostPage = () => {
 			<Header title="Writings" />
 			<SEO title="Writings | Terrance Reynolds" />
 
-			<Container sx={{ py: 8 }}>
+			<Container sx={{ py: 4 }}>
 				<Box sx={{ display: 'grid', justifyContent: 'center' }}>
-					{posts.map((post: PostPreviewTypes) => {
-						return <PostPreview {...post} />;
+					{posts.map((post: PostPreviewTypes, key: number) => {
+						return <PostPreview {...post} key={key} />;
 					})}
 				</Box>
 			</Container>
