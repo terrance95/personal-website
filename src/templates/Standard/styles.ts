@@ -19,6 +19,7 @@ const sx: StyleTypes = {
 		fontSize: [1, 1, 1, 2],
 		lineHeight: 1.5,
 		fontFamily: `'Founders Grotesk'`,
+
 		img: {
 			width: '100%',
 			py: 4,

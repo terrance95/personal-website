@@ -44,16 +44,18 @@ module.exports = {
 				background_color: `#0B0B0B`,
 				theme_color: `#0B0B0B`,
 				display: `minimal-ui`,
+				scope: '/',
+
 				icons: [
 					{
 						src: '/icon-512.png',
-						size: `512x512`,
+						sizes: `512x512`,
 						type: 'image/png',
 						purpose: 'any maskable',
 					},
 					{
 						src: '/icon-192.png',
-						size: `192x192`,
+						sizes: `192x192`,
 						type: 'image/png',
 						purpose: 'any maskable',
 					},
