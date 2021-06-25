@@ -37,7 +37,7 @@
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	font: 112.5%/1.45em georgia, serif, sans-serif;
+	font: 112.5%/1.45em sans-serif;
 	box-sizing: border-box;
 	overflow-y: scroll;
 }
@@ -45,7 +45,6 @@ body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: georgia, serif;
 	font-weight: normal;
 	word-wrap: break-word;
 	font-kerning: normal;
@@ -61,7 +60,7 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Founders Grotesk' !important;
+	font-family: 'Founders Grotesk', sans-serif !important;
 }
 
 h1,
@@ -70,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Founders Grotesk Condensed' !important;
+	font-family: 'Founders Grotesk Condensed', sans-serif !important;
 	color: #f7f7df;
 	text-transform: uppercase;
 }
