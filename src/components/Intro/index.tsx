@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import { ChevronRight } from 'react-feather';
 import { Box, Button, Heading, Text } from 'theme-ui';
 import FadeIn from 'react-fade-in';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import Tag from '../Tag';
 import _sx from './styles';
@@ -10,7 +11,7 @@ import _sx from './styles';
 const Intro: FC<ExtendStyles> = ({ sx }) => {
 	return (
 		<Box sx={{ justifySelf: 'normal', ...sx }}>
-			<FadeIn delay={100}>
+			<FadeIn delay={200}>
 				<Box
 					sx={{
 						mb: [4, 4, 4, 4, 4, 4, 4, 4, 8],
@@ -29,13 +30,17 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 				</Text>
 
 				<Box sx={{ ..._sx.row, mt: [6, 6, 6, 7, 7] }}>
-					<Link to="/about" style={{ textDecoration: 'none' }}>
+					<AniLink
+						fade
+						to="/about"
+						style={{ textDecoration: 'none' }}
+					>
 						<Button variant="primary">Read About Me</Button>
-					</Link>
+					</AniLink>
 
-					<Link to="/posts">
+					<AniLink to="/posts" fade>
 						<Button variant="secondary">My Writings</Button>
-					</Link>
+					</AniLink>
 				</Box>
 			</FadeIn>
 		</Box>

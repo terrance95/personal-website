@@ -24,7 +24,7 @@ const Carousel: FC<ExtendStyles & { data: any }> = ({
 				...sx,
 			}}
 		>
-			<FadeIn delay={150}>
+			<FadeIn delay={200}>
 				<CarouselProvider
 					naturalSlideWidth={2000}
 					naturalSlideHeight={2800}

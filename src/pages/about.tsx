@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Box, Button, Text, Image } from 'theme-ui';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SEO from '../components/SEO';
-import Tag from '../components/Tag';
-import { graphql, Link, useStaticQuery } from 'gatsby';
-import { Mail, Send } from 'react-feather';
-import Img from 'gatsby-image';
+import { Mail } from 'react-feather';
 import FadeIn from 'react-fade-in';
 
 const illustration = require('../images/illustration-min.jpg');
@@ -19,7 +16,7 @@ const AboutPage = () => {
 			<SEO title="About Me | Terrance Reynolds" />
 
 			<Container sx={{ py: 4 }}>
-				<FadeIn delay={100}>
+				<FadeIn delay={200}>
 					<Box sx={sx.imageContainer}>
 						<Image src={illustration} />
 					</Box>

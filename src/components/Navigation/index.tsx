@@ -64,7 +64,7 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 					}}
 				/>{' '}
 				<Box sx={sx.menu}>
-					<FadeIn delay={100}>
+					<FadeIn delay={200}>
 						<Box>
 							{navItems.map((item: navItemsType, key: number) => {
 								if (item.title === 'Contact') {

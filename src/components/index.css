@@ -77,3 +77,7 @@ h6 {
 ::selection {
 	background: #31312d;
 }
+
+img {
+	border-radius: 0.5rem;
+}

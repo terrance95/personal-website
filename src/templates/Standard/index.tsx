@@ -31,7 +31,7 @@ const StandardTemplate = ({ data: { mdx } }: any) => {
 			<Header title="Writings" to="/posts" />
 			<SEO title="Writings | Terrance Reynolds" />
 			<Container sx={{ pt: 6, pb: 9 }}>
-				<FadeIn delay={100}>
+				<FadeIn delay={200}>
 					<Box sx={sx.post}>
 						{/* @ts-ignore */}
 						<Tag sx={sx.tag}>{mdx.frontmatter.category}</Tag>

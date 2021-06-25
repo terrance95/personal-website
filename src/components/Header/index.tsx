@@ -8,6 +8,7 @@ import Logo from '../Logo';
 import { Link } from 'gatsby';
 import '../index.css';
 import navItems from '../Navigation/navItem';
+//@ts-expect-error
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 type HeaderProps = {
@@ -21,14 +22,14 @@ const Header: FC<HeaderProps> = ({ title, to }) => {
 	return (
 		<Box as="header" sx={sx.wrapper}>
 			<Container sx={sx.flex}>
-				<Link to="/" style={{ textDecoration: 'none' }}>
+				<AniLink to="/" style={{ textDecoration: 'none' }} fade>
 					<Logo />
-				</Link>
+				</AniLink>
 				{title && (
 					<Box sx={sx.title}>
-						<Link to={to ? `${to.toLowerCase()}` : '/'}>
+						<AniLink to={to ? `${to.toLowerCase()}` : '/'} fade>
 							<Text>{title}</Text>
-						</Link>
+						</AniLink>
 					</Box>
 				)}
 

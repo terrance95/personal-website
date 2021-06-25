@@ -3,6 +3,8 @@ import React, { FC, forwardRef, Ref } from 'react';
 import { Box, Text } from 'theme-ui';
 import Tag from '../Tag';
 import sx from './styles';
+//@ts-expect-error
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export type PostPreviewTypes = {
 	title: string;
@@ -18,11 +20,11 @@ const PostPreview: FC<PostPreviewTypes> = forwardRef(
 				{/* @ts-ignore */}
 				<Tag sx={sx.category}>{category}</Tag>
 
-				<Link to={slug} style={{ textDecoration: 'none' }}>
+				<AniLink to={slug} style={{ textDecoration: 'none' }} fade>
 					<Text as="h3" sx={sx.heading}>
 						{title}
 					</Text>
-				</Link>
+				</AniLink>
 				<Text sx={sx.text}>{excerpt}</Text>
 			</Box>
 		);
