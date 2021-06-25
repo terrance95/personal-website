@@ -7,7 +7,6 @@ import Footer from '../components/Footer';
 import Intro from '../components/Intro';
 import Carousel from '../components/Carousel';
 import { graphql } from 'gatsby';
-import FadeIn from 'react-fade-in';
 
 export const query = graphql`
 	query {
