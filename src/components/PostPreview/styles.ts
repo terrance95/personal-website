@@ -1,6 +1,5 @@
 const sx: StyleTypes = {
 	wrapper: {
-		mt: 1,
 		py: 6,
 		maxWidth: 'xlg',
 		borderBottom: '1px solid #191917',
