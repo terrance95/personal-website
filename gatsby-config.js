@@ -39,7 +39,7 @@ module.exports = {
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				name: `Terrance Reynolds`,
-				short_name: `Terrance Reynolds`,
+				short_name: `Terrance`,
 				start_url: `/`,
 				background_color: `#0B0B0B`,
 				theme_color: `#0B0B0B`,
