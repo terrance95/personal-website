@@ -4,6 +4,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Box } from 'theme-ui';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import FadeIn from 'react-fade-in';
 
 const Carousel: FC<ExtendStyles & { data: any }> = ({
 	sx,
@@ -23,32 +24,34 @@ const Carousel: FC<ExtendStyles & { data: any }> = ({
 				...sx,
 			}}
 		>
-			<CarouselProvider
-				naturalSlideWidth={2000}
-				naturalSlideHeight={2800}
-				totalSlides={4}
-				visibleSlides={1.5}
-				isPlaying
-				infinite
-			>
-				<Slider aria-label="slider">
-					{edges.map((photo: any, key: number) => {
-						return (
-							<Slide index={key} key={key}>
-								<Img
-									fluid={photo.node.fluid}
-									//hasMasterSpinner
-									style={{
-										height: '100%',
-										objectFit: 'cover',
-										objectPosition: 'center center',
-									}}
-								/>
-							</Slide>
-						);
-					})}
-				</Slider>
-			</CarouselProvider>
+			<FadeIn delay={150}>
+				<CarouselProvider
+					naturalSlideWidth={2000}
+					naturalSlideHeight={2800}
+					totalSlides={4}
+					visibleSlides={1.5}
+					isPlaying
+					infinite
+				>
+					<Slider aria-label="slider">
+						{edges.map((photo: any, key: number) => {
+							return (
+								<Slide index={key} key={key}>
+									<Img
+										fluid={photo.node.fluid}
+										//hasMasterSpinner
+										style={{
+											height: '100%',
+											objectFit: 'cover',
+											objectPosition: 'center center',
+										}}
+									/>
+								</Slide>
+							);
+						})}
+					</Slider>
+				</CarouselProvider>
+			</FadeIn>
 		</Box>
 	);
 };

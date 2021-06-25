@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import PostPreview, { PostPreviewTypes } from '../components/PostPreview';
 import SEO from '../components/SEO';
 import usePosts from '../hooks/usePosts';
+import FadeIn from 'react-fade-in';
 
 const PostPage = () => {
 	const posts = usePosts();
@@ -17,11 +18,13 @@ const PostPage = () => {
 			<SEO title="Writings | Terrance Reynolds" />
 
 			<Container sx={{ py: 0 }}>
-				<Box sx={{ display: 'grid', justifyContent: 'center' }}>
-					{posts.map((post: PostPreviewTypes, key: number) => {
-						return <PostPreview {...post} key={key} />;
-					})}
-				</Box>
+				<FadeIn>
+					<Box sx={{ display: 'grid', justifyContent: 'center' }}>
+						{posts.map((post: PostPreviewTypes, key: number) => {
+							return <PostPreview {...post} key={key} />;
+						})}
+					</Box>
+				</FadeIn>
 			</Container>
 			<Footer />
 		</Box>

@@ -10,6 +10,7 @@ import Logo from '../Logo';
 import navItems, { navItemsType } from './navItem';
 import sx from './styles';
 import { motion } from 'framer-motion';
+import FadeIn from 'react-fade-in';
 
 const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 	useEffect(() => {
@@ -63,33 +64,35 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 					}}
 				/>{' '}
 				<Box sx={sx.menu}>
-					<Box>
-						{navItems.map((item: navItemsType, key: number) => {
-							if (item.title === 'Contact') {
+					<FadeIn delay={100}>
+						<Box>
+							{navItems.map((item: navItemsType, key: number) => {
+								if (item.title === 'Contact') {
+									return (
+										<a
+											key={key}
+											href="mailto:hello@terrancereynolds.com"
+										>
+											<Box sx={sx.link}>{item.title}</Box>
+										</a>
+									);
+								}
 								return (
-									<a
-										key={key}
-										href="mailto:hello@terrancereynolds.com"
-									>
-										<Box sx={sx.link}>{item.title}</Box>
-									</a>
+									<Box sx={sx.link}>
+										<Link
+											to={item.to}
+											activeStyle={{
+												color: theme.colors.primary,
+												fontWeight: 700,
+											}}
+										>
+											{item.title}
+										</Link>
+									</Box>
 								);
-							}
-							return (
-								<Box sx={sx.link}>
-									<Link
-										to={item.to}
-										activeStyle={{
-											color: theme.colors.primary,
-											fontWeight: 700,
-										}}
-									>
-										{item.title}
-									</Link>
-								</Box>
-							);
-						})}
-					</Box>
+							})}
+						</Box>
+					</FadeIn>
 				</Box>
 				<Footer />
 			</Box>

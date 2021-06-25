@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Intro from '../components/Intro';
 import Carousel from '../components/Carousel';
 import { graphql } from 'gatsby';
+import FadeIn from 'react-fade-in';
 
 export const query = graphql`
 	query {
@@ -43,7 +44,9 @@ const IndexPage = ({ data }) => {
 				<Container>
 					<Box sx={sx.grid}>
 						{/* @ts-expect-error */}
+
 						<Intro sx={{ alignSelf: 'center' }} />
+
 						<Carousel
 							data={data}
 							sx={{
