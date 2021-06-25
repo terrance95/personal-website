@@ -13,7 +13,7 @@ const sx: StyleTypes = {
 	},
 	post: {
 		margin: '0 auto',
-		maxWidth: 'lg',
+		maxWidth: 'xlg',
 	},
 	body: {
 		fontSize: [1, 1, 1, 2],
