@@ -29,7 +29,7 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 					work focuses on creating well-crafted UI's for the web.
 				</Text>
 
-				<Box sx={{ ..._sx.row, mt: [6, 6, 6, 7, 7] }}>
+				<Box sx={{ ..._sx.row, mt: [5, 5, 6, 7, 7] }}>
 					<AniLink
 						fade
 						to="/about"

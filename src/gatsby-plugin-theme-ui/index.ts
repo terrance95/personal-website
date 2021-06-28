@@ -71,7 +71,7 @@ const theme: ThemeTypes = {
 		primary: {
 			bg: 'primary',
 			fontFamily: 'body',
-			fontSize: [0, 0, 0, 0, 0, 0, 0, 0, 1],
+			fontSize: ['.75rem', '.75rem', 0, 0, 0, 0, 0, 0, 1],
 			px: [3, 3, 3, 3, 5],
 			py: [1, 1, 2, 2, 2, 2, 2, 2, 3],
 			width: '100%',
@@ -90,9 +90,8 @@ const theme: ThemeTypes = {
 		secondary: {
 			bg: '#161616',
 			fontFamily: 'body',
-			fontSize: [0, 0, 0, 0, 0, 0, 0, 0, 1],
+			fontSize: ['.75rem', '.75rem', 0, 0, 0, 0, 0, 0, 1],
 			px: [3, 3, 3, 3, 5],
-
 			py: [1, 1, 2, 2, 2, 2, 2, 2, 3],
 			width: '100%',
 			border: '1px solid hsl(0deg 0% 100% / 5%)',

@@ -36,7 +36,7 @@ const sx: StyleTypes = {
 	row: {
 		display: 'grid',
 		maxWidth: ['tny', 'tny', 'tny', 'tny', 'tny', 'tny', 'tny', 'sm', 'md'],
-		gridTemplateColumns: '1fr 1fr',
+		gridTemplateColumns: '5fr 4fr',
 		columnGap: 4,
 		alignItems: 'center',
 		pr: 4,
