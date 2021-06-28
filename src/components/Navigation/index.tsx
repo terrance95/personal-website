@@ -57,7 +57,7 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 						left: '50%',
 						position: 'absolute',
 						transform: 'translate(-50%, -50%)',
-						opacity: [0.1, 0.08],
+						opacity: [0.08, 0.08],
 						filter: 'blur(4rem)',
 						zIndex: 0,
 						borderRadius: '50%',

@@ -17,7 +17,7 @@ const PostPage = () => {
 			<Header title="Writings" />
 			<SEO title="Writings | Terrance Reynolds" />
 
-			<Container sx={{ py: 0 }}>
+			<Container sx={{ pb: 6 }}>
 				<FadeIn>
 					<Box sx={{ display: 'grid', justifyContent: 'center' }}>
 						{posts.map((post: PostPreviewTypes, key: number) => {
