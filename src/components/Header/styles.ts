@@ -10,6 +10,8 @@ const sx: StyleTypes = {
 	},
 	button: {
 		svg: {
+			width: '1rem',
+			height: 'auto',
 			cursor: 'pointer',
 		},
 	},
