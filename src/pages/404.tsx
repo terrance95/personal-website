@@ -48,7 +48,7 @@ const sx: StyleTypes = {
 	wrapper: {
 		display: 'grid',
 		gridTemplateRows: 'auto 1fr auto',
-		margin: [0],
+		margin: 0,
 		minHeight: ['auto', '100vh'],
 	},
 
