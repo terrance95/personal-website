@@ -81,3 +81,13 @@ h6 {
 img {
 	border-radius: 0.33rem;
 }
+
+@media (max-width: 280px) {
+	.homepage-buttons {
+		grid-template-columns: 1fr;
+	}
+
+	.homepage-buttons :first-child {
+		margin-bottom: 0.33rem;
+	}
+}
