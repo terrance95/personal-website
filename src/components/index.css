@@ -84,10 +84,10 @@ img {
 
 @media (max-width: 280px) {
 	.homepage-buttons {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr !important;
 	}
 
 	.homepage-buttons :first-child {
-		margin-bottom: 0.33rem;
+		margin-bottom: 0.33rem !important;
 	}
 }
