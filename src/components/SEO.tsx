@@ -11,10 +11,10 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 type SEOTypes = {
-	description: any;
-	lang: any;
-	meta: any;
-	title: any;
+	description: string;
+	lang: string;
+	meta: any[];
+	title: string;
 };
 
 function SEO({ description, lang, meta, title }: SEOTypes) {
@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, title }: SEOTypes) {
 				{
 					name: `twitter:creator`,
 					content: site.siteMetadata?.author || ``,
+				},
+				{
+					property: `og:image`,
+					content: `/og-image.jpg`,
 				},
 				{
 					name: `twitter:title`,

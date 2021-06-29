@@ -5,13 +5,12 @@ import Header from '../components/Header';
 import SEO from '../components/SEO';
 //@ts-expect-error
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-
 const NotFoundPage = () => (
 	<Box sx={sx.wrapper}>
 		<Header />
 		<SEO title="404: Not found" />
 
-		<Container sx={{ maxWidth: 'xlg' }}>
+		<Container sx={{ maxWidth: 'xlg', pt: 6 }}>
 			<Box>
 				<Box>
 					<Text as="h2" sx={sx.error404}>
