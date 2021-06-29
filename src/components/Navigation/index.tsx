@@ -9,7 +9,6 @@ import Footer from '../Footer';
 import Logo from '../Logo';
 import navItems, { navItemsType } from './navItem';
 import sx from './styles';
-import { motion } from 'framer-motion';
 import FadeIn from 'react-fade-in';
 
 const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
@@ -23,21 +22,8 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 	}, []);
 
 	return createPortal(
-		<motion.div
-			animate={{
-				height: '100%',
-				position: 'fixed',
-				top: 0,
-				left: 0,
-				width: '100%',
-				minHeight: '100vh',
-				zIndex: 9999,
-				overflowY: 'hidden',
-				margin: 0,
-			}}
-			transition={{ duration: 0.2, ease: 'easeInOut', bounce: true }}
-		>
-			<Box sx={sx.wrapper}>
+		<Box sx={sx.wrapper}>
+			<Box sx={sx.content}>
 				<Container>
 					<Box sx={sx.flex}>
 						<Box onClick={setMenu}>
@@ -57,7 +43,7 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 						left: '50%',
 						position: 'absolute',
 						transform: 'translate(-50%, -50%)',
-						opacity: [0.08, 0.08],
+						opacity: '.15',
 						filter: 'blur(4rem)',
 						zIndex: 0,
 						borderRadius: '50%',
@@ -96,7 +82,7 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 				</Box>
 				<Footer />
 			</Box>
-		</motion.div>,
+		</Box>,
 		document.body,
 	);
 };

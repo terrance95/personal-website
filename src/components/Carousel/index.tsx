@@ -18,7 +18,7 @@ const Carousel: FC<ExtendStyles & { data: any }> = ({
 				'.carousel__inner-slide': {
 					width: 'calc(100% - 1rem)',
 					height: 'calc(100% - 1rem)',
-					left: '.5rem',
+					right: '.5rem',
 					top: '.5rem',
 				},
 				...sx,

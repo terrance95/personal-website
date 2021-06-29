@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { Box, Button, Text } from 'theme-ui';
 import Header from '../../components/Header';
@@ -7,7 +7,6 @@ import Container from '../../components/Container';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Tag from '../../components/Tag';
 import SEO from '../../components/SEO';
-import { ChevronLeft } from 'react-feather';
 import sx from './styles';
 import FadeIn from 'react-fade-in';
 
@@ -31,8 +30,8 @@ const StandardTemplate = ({ data: { mdx } }: any) => {
 			<Header title="Writings" to="/posts" />
 			<SEO title="Writings | Terrance Reynolds" />
 			<Container sx={{ pt: 6, pb: 9 }}>
-				<FadeIn delay={200}>
-					<Box sx={sx.post}>
+				<Box sx={sx.post}>
+					<FadeIn delay={200}>
 						{/* @ts-ignore */}
 						<Tag sx={sx.tag}>{mdx.frontmatter.category}</Tag>
 						<Text as="h1" sx={sx.heading}>
@@ -52,8 +51,8 @@ const StandardTemplate = ({ data: { mdx } }: any) => {
 								Back To Writing
 							</Button>
 						</Link>
-					</Box>
-				</FadeIn>
+					</FadeIn>
+				</Box>
 			</Container>
 			<Footer />
 		</Box>

@@ -1,5 +1,16 @@
 const sx: StyleTypes = {
 	wrapper: {
+		height: '100%',
+		position: 'fixed',
+		top: 0,
+		left: 0,
+		width: '100%',
+		minHeight: '100vh',
+		zIndex: 9999,
+		overflowY: 'hidden',
+		margin: 0,
+	},
+	content: {
 		width: '100%',
 		position: 'fixed',
 		top: '0',

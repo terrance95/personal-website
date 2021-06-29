@@ -1,13 +1,10 @@
 import React, { FC, useState } from 'react';
-import { Menu } from 'react-feather';
 import { Box, Text } from 'theme-ui';
 import Container from '../Container';
 import Navigation from '../Navigation';
 import sx from './styles';
 import Logo from '../Logo';
-import { Link } from 'gatsby';
 import '../index.css';
-import navItems from '../Navigation/navItem';
 //@ts-expect-error
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
