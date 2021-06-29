@@ -35,6 +35,7 @@ function SEO({ description, lang, meta, title }: SEOTypes) {
 		`,
 	);
 
+	console.log(image);
 	const metaDescription = description || site.siteMetadata.description;
 	const defaultTitle = site.siteMetadata?.title;
 
@@ -72,7 +73,7 @@ function SEO({ description, lang, meta, title }: SEOTypes) {
 				},
 				{
 					property: `og:image`,
-					content: `/${image}`,
+					content: `${image}`,
 				},
 				{
 					name: `twitter:title`,
