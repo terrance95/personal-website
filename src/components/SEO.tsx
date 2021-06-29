@@ -20,7 +20,6 @@ type SEOTypes = {
 const image = require('../../static/og-image.jpg');
 
 function SEO({ description, lang, meta, title }: SEOTypes) {
-	console.log(image);
 	const { site } = useStaticQuery(
 		graphql`
 			query {
