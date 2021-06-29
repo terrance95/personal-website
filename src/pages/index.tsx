@@ -35,7 +35,7 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
 	return (
 		<Box sx={sx.wrapper}>
-			<SEO title="Home | Terrance Reynolds" />
+			<SEO title="Terrance Reynolds | Developer & Designer" />
 
 			<Header />
 

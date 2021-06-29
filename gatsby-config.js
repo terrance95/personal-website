@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Terrance Reynolds`,
+		title: `Terrance Reynolds | Developer & Designer | Tokyo`,
 		description: `With over six years of design and development experience, 
 		my work focuses on creating well-crafted UI's for the web.`,
 		author: `Terrance Reynolds`,

@@ -15,7 +15,7 @@ const PostPage = () => {
 	return (
 		<Box sx={sx.wrapper}>
 			<Header title="Writings" />
-			<SEO title="Writings | Terrance Reynolds" />
+			<SEO title="Writings - Terrance Reynolds | Developer & Designer" />
 
 			<Container sx={{ pb: 6 }}>
 				<FadeIn>

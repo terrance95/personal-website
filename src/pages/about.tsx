@@ -13,7 +13,7 @@ const AboutPage = () => {
 	return (
 		<Box sx={sx.wrapper}>
 			<Header title="About Me" />
-			<SEO title="About Me | Terrance Reynolds" />
+			<SEO title="About Me - Terrance Reynolds | Developer & Designer" />
 
 			<Container sx={{ py: 4 }}>
 				<FadeIn delay={200}>
