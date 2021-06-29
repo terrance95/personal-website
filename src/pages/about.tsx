@@ -82,7 +82,7 @@ const AboutPage = () => {
 									<iframe
 										width="100%"
 										height="360"
-										src="https://www.youtube.com/embed/PC4qqUSjpqA"
+										src="https://www.youtube-nocookie.com/embed/PC4qqUSjpqA"
 										title="YouTube video player"
 										frameBorder="0"
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

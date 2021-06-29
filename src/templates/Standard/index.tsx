@@ -42,17 +42,17 @@ const StandardTemplate = ({ data: { mdx } }: any) => {
 						<Box sx={sx.body}>
 							<MDXRenderer>{mdx.body}</MDXRenderer>
 						</Box>
+						<Link to="/posts" style={{ textDecoration: 'none' }}>
+							<Button
+								variant="primary"
+								sx={{
+									mt: 5,
+								}}
+							>
+								Back To Writing
+							</Button>
+						</Link>
 					</Box>
-					<Link to="/posts" style={{ textDecoration: 'none' }}>
-						<Button
-							variant="primary"
-							sx={{
-								mt: 5,
-							}}
-						>
-							Back To Writing
-						</Button>
-					</Link>
 				</FadeIn>
 			</Container>
 			<Footer />

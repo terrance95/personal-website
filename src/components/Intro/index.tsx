@@ -1,8 +1,7 @@
-import { Link } from 'gatsby';
 import React, { FC } from 'react';
-import { ChevronRight } from 'react-feather';
 import { Box, Button, Heading, Text } from 'theme-ui';
 import FadeIn from 'react-fade-in';
+//@ts-ignore
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import Tag from '../Tag';
