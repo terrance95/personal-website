@@ -17,7 +17,10 @@ type SEOTypes = {
 	title: string;
 };
 
+const image = require('../../static/og-image.jpg');
+
 function SEO({ description, lang, meta, title }: SEOTypes) {
+	console.log(image);
 	const { site } = useStaticQuery(
 		graphql`
 			query {
@@ -69,7 +72,7 @@ function SEO({ description, lang, meta, title }: SEOTypes) {
 				},
 				{
 					property: `og:image`,
-					content: `/og-image.jpg`,
+					content: `/${image}`,
 				},
 				{
 					name: `twitter:title`,
