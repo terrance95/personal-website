@@ -50,34 +50,32 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 					}}
 				/>{' '}
 				<Box sx={sx.menu}>
-					<FadeIn delay={200}>
-						<Box>
-							{navItems.map((item: navItemsType, key: number) => {
-								if (item.title === 'Contact') {
-									return (
-										<a
-											key={key}
-											href="mailto:hello@terrancereynolds.com"
-										>
-											<Box sx={sx.link}>{item.title}</Box>
-										</a>
-									);
-								}
+					<FadeIn delay={100}>
+						{navItems.map((item: navItemsType, key: number) => {
+							if (item.title === 'Contact') {
 								return (
-									<Box sx={sx.link}>
-										<Link
-											to={item.to}
-											activeStyle={{
-												color: theme.colors.primary,
-												fontWeight: 700,
-											}}
-										>
-											{item.title}
-										</Link>
-									</Box>
+									<a
+										key={key}
+										href="mailto:hello@terrancereynolds.com"
+									>
+										<Box sx={sx.link}>{item.title}</Box>
+									</a>
 								);
-							})}
-						</Box>
+							}
+							return (
+								<Box sx={sx.link}>
+									<Link
+										to={item.to}
+										activeStyle={{
+											color: theme.colors.primary,
+											fontWeight: 700,
+										}}
+									>
+										{item.title}
+									</Link>
+								</Box>
+							);
+						})}
 					</FadeIn>
 				</Box>
 				<Footer />
