@@ -1,10 +1,8 @@
 import { CarouselProvider, Slide, Slider, Image } from 'pure-react-carousel';
 import React from 'react';
-import { Box } from 'react-feather';
 
 const gallery = [
 	require('../../images/terrance-1.jpg'),
-
 	require('../../images/terrance-3.jpg'),
 	require('../../images/terrance-5.jpg'),
 

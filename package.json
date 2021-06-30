@@ -4,10 +4,7 @@
   "description": "My personal website",
   "version": "0.1.0",
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "@types/theme-ui": "^0.3.7",
-    "framer-motion": "^4.1.6",
+    
     "gatsby": "^2.32.3",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-manifest": "^2.12.1",
@@ -17,7 +14,6 @@
     "gatsby-plugin-sharp": "^2.14.3",
     "gatsby-plugin-theme-ui": "^0.3.5",
     "gatsby-plugin-transition-link": "^1.20.5",
-    "gatsby-plugin-vercel": "^1.0.3",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-sharp": "^2.12.1",
     "gsap": "^3.6.1",
@@ -31,6 +27,9 @@
     "theme-ui": "^0.3.5"
   },
   "devDependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@types/theme-ui": "^0.3.7",
     "@types/react-dom": "^17.0.3",
     "@types/react-helmet": "^6.1.0",
     "prettier": "2.2.1",

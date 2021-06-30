@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import SEO from '../components/SEO';
 //@ts-expect-error
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
 const NotFoundPage = () => (
 	<Box sx={sx.wrapper}>
 		<Header />

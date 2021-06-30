@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { Minus } from 'react-feather';
 import { Box, Text } from 'theme-ui';
-import sx from '../Navigation/styles';
 
 const _sx: StyleTypes = {
 	flex: {

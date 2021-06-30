@@ -58,7 +58,7 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 										key={key}
 										href="mailto:hello@terrancereynolds.com"
 									>
-										<Box sx={sx.link}>{item.title}</Box>
+										<Box sx={sx.link}>Email</Box>
 									</a>
 								);
 							}

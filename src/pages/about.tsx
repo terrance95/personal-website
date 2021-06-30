@@ -18,7 +18,7 @@ const AboutPage = () => {
 			<Container sx={{ py: 4 }}>
 				<FadeIn delay={200}>
 					<Box sx={sx.imageContainer}>
-						<Image src={illustration} />
+						<Image src={illustration} loading="lazy" />
 					</Box>
 
 					<Box sx={sx.content}>
@@ -104,10 +104,10 @@ const AboutPage = () => {
 									lineHeight: 1.5,
 								}}
 							>
-								If you would like together, please choose from
-								the options below. A brief introduction of who
-								you are and how I can help you would be greatly
-								appreciate. I contact you as soon as I can.
+								For all inquiries, please click below. A brief
+								introduction of who you are and how I can help
+								you would be greatly appreciated and I'll
+								contact you as soon as I can.
 							</Text>
 						</Box>
 

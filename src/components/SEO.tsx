@@ -34,7 +34,6 @@ function SEO({ description, lang, meta, title }: SEOTypes) {
 		`,
 	);
 
-	console.log(image);
 	const metaDescription = description || site.siteMetadata.description;
 	const defaultTitle = site.siteMetadata?.title;
 

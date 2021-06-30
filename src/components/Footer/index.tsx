@@ -1,5 +1,4 @@
 import React from 'react';
-import { GitHub } from 'react-feather';
 import { Box, Text } from 'theme-ui';
 import Container from '../Container';
 
