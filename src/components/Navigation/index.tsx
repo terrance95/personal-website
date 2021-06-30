@@ -26,7 +26,10 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 			<Box sx={sx.content}>
 				<Container>
 					<Box sx={sx.flex}>
-						<Box onClick={setMenu}>
+						<Box
+							onClick={setMenu}
+							sx={{ ':hover': { cursor: 'pointer' } }}
+						>
 							<Logo />
 						</Box>
 						<Box onClick={setMenu} sx={sx.close}>
@@ -43,7 +46,7 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 						left: '50%',
 						position: 'absolute',
 						transform: 'translate(-50%, -50%)',
-						opacity: '.15',
+						opacity: '.08',
 						filter: 'blur(4rem)',
 						zIndex: 0,
 						borderRadius: '50%',

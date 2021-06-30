@@ -13,7 +13,7 @@ const sx: StyleTypes = {
 		transition: 'all 200ms ease-in-out',
 
 		'&:hover': {
-			color: '#bcbcaa',
+			opacity: '.7',
 		},
 	},
 	category: {

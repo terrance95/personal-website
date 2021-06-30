@@ -19,7 +19,12 @@ const Header: FC<HeaderProps> = ({ title, to }) => {
 	return (
 		<Box as="header" sx={sx.wrapper}>
 			<Container sx={sx.flex}>
-				<AniLink to="/" style={{ textDecoration: 'none' }} fade>
+				<AniLink
+					to="/"
+					style={{ textDecoration: 'none' }}
+					fade
+					aria-label="Logo"
+				>
 					<Logo />
 				</AniLink>
 				{title && (

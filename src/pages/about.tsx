@@ -22,8 +22,6 @@ const AboutPage = () => {
 					</Box>
 
 					<Box sx={sx.content}>
-						{/* @ts-ignore */}
-
 						<Box>
 							<Text as="h1" sx={sx.heading}>
 								“We over estimate what we can do in a day but
@@ -33,50 +31,52 @@ const AboutPage = () => {
 							<Text as="p">
 								Software development and design are topics that
 								continuously fascinate me. In the last six years
-								of my career in software development and user
-								interface design, I have equipped myself with
-								the skills to open my perspective and enhance my
-								craft to build exceptional applications and
-								websites. As a young child, I developed a
-								passion for technology, and what turned into
-								experimentation projects quickly grew into an
-								accelerated path of innovation.
+								of my career, I have equipped myself with the
+								skills to open my perspective and enhance my
+								craft to build great applications and websites.
+								As a young child, I developed a passion for
+								technology. What was once just a childhood hobby
+								transformed into a career where I constantly
+								challenge myself to grow as a creator.
 							</Text>
 							<Text as="p">
 								After graduating college at age 20, I started my
 								first small business in Cleveland, OH,
 								developing and designing websites for clients
-								all across the world, from Hong Kong to New
-								York. Being a self-taught developer, I'm
-								constantly perfecting my craft and sharpening my
-								skills in all areas. I understand that great
-								work requires dedication and I strive to bring
-								that value to every project and team that I work
-								on.
+								worldwide – from Hong Kong to New York. As a
+								self-taught developer, I'm constantly learning
+								new skills to enhance my craft and remain on the
+								industry's bleeding edge. I understand that
+								great work requires dedication, and I strive to
+								bring that value to every project and team.
 							</Text>
 
 							<Text as="p">
-								With my ability to bridge together both worlds
-								of design and development, I’m able to not only
-								communicate a thorough strategy for stakeholders
-								but execute with precision and attention to
-								detail. In the ever-changing field of
-								technology, my passion for all areas of this
-								field only increases with the amount of
-								potential value and opportunity I can offer
-								those I work with.
+								With my ability to bridge together the worlds of
+								design and development, I can carry a project
+								solo and work with designers, developers, and
+								other stakeholders. I found the most significant
+								challenge isn't thinking of a new product but
+								finding people who can effectively communicate
+								with team members with different roles and
+								professional backgrounds. In the ever-changing
+								industry of technology, we need people who can
+								act as great collaborators and orchestrators to
+								build the best products.
 							</Text>
 
 							<Text as="p">
-								Now living in Japan to broaden my experiences
-								both personally and professionally, I use this
-								time wisely to push myself even further to
-								perfect my craft. This field has allowed me to
-								express my creativity and knowledge in ways I
-								could have never imagined. As I continue my
-								career, I plan to excel and push myself with
-								every new project and challenge I face.
+								In 2017, I moved to Japan to broaden my
+								experiences both personally and professionally.
+								This shift in my life has brought new sources of
+								creativity and knowledge. I spend my free time
+								reading, podcasting, and traveling. As I
+								continue in this journey of life and tech, I
+								search for the answer to the most infamous
+								question of them all. What's next?
 							</Text>
+							<Box sx={sx.line} />
+
 							<Box sx={{ mt: 5 }}>
 								<Box sx={sx.videoContainer}>
 									<iframe

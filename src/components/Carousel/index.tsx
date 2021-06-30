@@ -45,7 +45,6 @@ const Carousel: FC<ExtendStyles & { data: any }> = ({
 											objectFit: 'cover',
 											objectPosition: 'center center',
 										}}
-										loading="lazy"
 									/>
 								</Slide>
 							);
