@@ -8,13 +8,7 @@ module.exports = {
 	plugins: [
 		`gatsby-plugin-react-helmet`,
 		'gatsby-plugin-theme-ui',
-		{
-			resolve: 'gatsby-plugin-vercel',
-			options: {
-				// (optional) Prints metrics in the console when true
-				debug: false,
-			},
-		},
+
 		{
 			resolve: 'gatsby-plugin-mdx',
 			options: {
