@@ -130,7 +130,7 @@ const AboutPage = ({ data }) => {
 						</Box>
 
 						<Box sx={sx.buttons}>
-							<a href="mailto:hello@terrancereynolds.com">
+							<a href="mailto:terrancereynolds2@gmail.com">
 								<Button variant="primary" sx={{ mb: 8 }}>
 									<Mail />
 									Send An Email
