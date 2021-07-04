@@ -96,7 +96,7 @@ const AboutPage = ({ data }) => {
 
 							<Box sx={{ mt: 5 }}>
 								<Box sx={sx.videoContainer}>
-									<iframe
+									{/* <iframe
 										width="100%"
 										height="360"
 										src="https://www.youtube-nocookie.com/embed/PC4qqUSjpqA"
@@ -105,7 +105,7 @@ const AboutPage = ({ data }) => {
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 										allowFullScreen
 										loading="lazy"
-									></iframe>
+									></iframe> */}
 								</Box>
 							</Box>
 						</Box>
