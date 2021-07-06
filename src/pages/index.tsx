@@ -18,8 +18,8 @@ export const query = graphql`
 				node {
 					fluid(
 						maxWidth: 2000
-						quality: 100
-						webpQuality: 10
+						quality: 60
+						webpQuality: 7
 						traceSVG: { alphaMax: 1.5 }
 					) {
 						...GatsbyImageSharpFluid
