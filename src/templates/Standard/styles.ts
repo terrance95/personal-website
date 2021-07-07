@@ -7,7 +7,7 @@ const sx: StyleTypes = {
 	},
 	heading: {
 		fontFamily: 'heading',
-		fontSize: [3, 3, 3, 6, 6],
+		fontSize: [3, 3, 3, 5, 5],
 		mb: 4,
 		lineHeight: 1.1,
 	},

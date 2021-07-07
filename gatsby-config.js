@@ -11,13 +11,6 @@ module.exports = {
 
 		{
 			resolve: 'gatsby-plugin-mdx',
-			options: {
-				defaultLayouts: {
-					default: require.resolve(
-						`${__dirname}/src/components/Layout/index.tsx`,
-					),
-				},
-			},
 		},
 		{
 			resolve: `gatsby-source-filesystem`,

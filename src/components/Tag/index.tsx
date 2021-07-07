@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { Minus } from 'react-feather';
 import { Box, Text } from 'theme-ui';
 
 const _sx: StyleTypes = {
@@ -34,7 +33,17 @@ const _sx: StyleTypes = {
 const Tag: FC<ExtendStyles> = ({ children, sx }) => {
 	return (
 		<Box sx={{ ...sx, ..._sx.flex }}>
-			<Minus strokeWidth="1" />
+			<svg
+				width="24"
+				height="24"
+				fill="none"
+				stroke="currentColor"
+				strokeWidth="1.5"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			>
+				<path d="M5 12h14" />
+			</svg>
 
 			<Text sx={_sx.label} as="span">
 				{children}
