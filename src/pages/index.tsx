@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { Box } from 'theme-ui';
+import React from 'react';
 import SEO from '../components/SEO';
 import Header from '../components/Header';
 import Container from '../components/Container';
@@ -7,11 +6,12 @@ import Footer from '../components/Footer';
 import Intro from '../components/Intro';
 import Carousel from '../components/Carousel';
 import { graphql } from 'gatsby';
+import { Box } from 'theme-ui';
 
 export const query = graphql`
 	query {
 		allImageSharp(
-			filter: { sizes: { originalName: { glob: "terrance-*-min.jpg" } } }
+			filter: { fixed: { originalName: { glob: "terrance-*-min.jpg" } } }
 			sort: { fields: fluid___originalName }
 		) {
 			edges {
@@ -42,8 +42,6 @@ const IndexPage = ({ data }) => {
 			<Box>
 				<Container>
 					<Box sx={sx.grid}>
-						{/* @ts-expect-error */}
-
 						<Intro sx={{ alignSelf: 'center' }} />
 
 						<Carousel

@@ -33,6 +33,7 @@ const PostPage = () => {
 
 const sx: StyleTypes = {
 	wrapper: {
+		bg: 'background',
 		display: 'grid',
 		gridTemplateRows: 'auto 1fr auto',
 		margin: [0],

@@ -98,13 +98,13 @@ const AboutPage = ({ data }) => {
 									<iframe
 										width="100%"
 										height="360"
-										src="https://www.youtube-nocookie.com/embed/PC4qqUSjpqA"
+										src="https://www.youtube.com/embed/A1vFVaCFjTg"
 										title="YouTube video player"
 										frameBorder="0"
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 										allowFullScreen
 										loading="lazy"
-									></iframe>
+									/>
 								</Box>
 							</Box>
 						</Box>
@@ -166,6 +166,7 @@ const AboutPage = ({ data }) => {
 
 const sx: StyleTypes = {
 	wrapper: {
+		bg: 'background',
 		display: 'grid',
 		gridTemplateRows: 'auto 1fr auto',
 		margin: [0],
@@ -177,6 +178,7 @@ const sx: StyleTypes = {
 		mb: 8,
 	},
 	content: {
+		bg: 'background',
 		display: 'grid',
 		justifyContent: 'center',
 		maxWidth: ['xlg', 'xlg', 'lg', 'lg', 'lg', 'lg', 'lg', 'lg', 'xxlg'],

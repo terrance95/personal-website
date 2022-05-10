@@ -1,5 +1,6 @@
 const sx: StyleTypes = {
 	wrapper: {
+		bg: 'background',
 		display: 'grid',
 		gridTemplateRows: 'auto 1fr auto',
 		margin: [0],
@@ -16,6 +17,7 @@ const sx: StyleTypes = {
 		maxWidth: 'xlg',
 	},
 	body: {
+		bg: 'background',
 		fontSize: [1, 1, 1, 2],
 		lineHeight: 1.5,
 		fontFamily: `'Founders Grotesk'`,
