@@ -16,7 +16,13 @@ type ContainerProps = {
 
 const Container: FC<ContainerProps> = ({ children, sx, fullWidth = true }) => {
 	return (
-		<Box sx={{ ..._sx.wrapper, width: fullWidth ? '90vw' : 'xxlg', ...sx }}>
+		<Box
+			sx={{
+				..._sx.wrapper,
+				width: fullWidth ? '90vw' : 'spacing08',
+				...sx,
+			}}
+		>
 			{children}
 		</Box>
 	);

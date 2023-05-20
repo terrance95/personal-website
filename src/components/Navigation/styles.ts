@@ -39,10 +39,9 @@ const sx: StyleTypes = {
 			color: 'muted',
 			textDecoration: 'none',
 			fontFamily: 'Founders Grotesk Condensed',
-			fontSize: [3, 3, 3, 5, 6],
+			fontSize: [3, 3, 3, 4, 4],
 			display: 'inline-block',
-			textTransform: 'uppercase',
-			pb: [4, 4, 4, 6, 7],
+			pb: [4, 4, 4, 5, 5],
 		},
 	},
 	close: {
@@ -51,6 +50,19 @@ const sx: StyleTypes = {
 	link: {
 		position: 'relative',
 		zIndex: 10,
+	},
+	blur: {
+		bg: 'primary',
+		width: '100%',
+		height: ['12rem', '13rem'],
+		top: '50%',
+		left: '50%',
+		position: 'absolute',
+		transform: 'translate(-50%, -50%)',
+		opacity: '.08',
+		filter: 'blur(4rem)',
+		zIndex: 0,
+		borderRadius: '50%',
 	},
 };
 

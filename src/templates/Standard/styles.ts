@@ -14,7 +14,7 @@ const sx: StyleTypes = {
 	},
 	post: {
 		margin: '0 auto',
-		maxWidth: 'xlg',
+		maxWidth: 'spacing07',
 	},
 	body: {
 		bg: 'background',

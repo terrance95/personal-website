@@ -46,21 +46,7 @@ const Navigation: FC<{ setMenu: () => void }> = ({ setMenu }) => {
 						</Box>
 					</Box>
 				</Container>
-				<Box
-					sx={{
-						bg: 'primary',
-						width: ['12rem', '13rem'],
-						height: ['12rem', '13rem'],
-						top: '50%',
-						left: '50%',
-						position: 'absolute',
-						transform: 'translate(-50%, -50%)',
-						opacity: '.08',
-						filter: 'blur(4rem)',
-						zIndex: 0,
-						borderRadius: '50%',
-					}}
-				/>{' '}
+				<Box sx={sx.blur} />
 				<Box sx={sx.menu}>
 					<FadeIn delay={100}>
 						{navItems.map((item: navItemsType, key: number) => {

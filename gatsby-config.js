@@ -11,6 +11,16 @@ module.exports = {
 
 		{
 			resolve: 'gatsby-plugin-mdx',
+			options: {
+				extensions: ['.mdx', '.md', '.markdown'],
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-page-creator',
+
+			options: {
+				path: `${__dirname}/src/posts`,
+			},
 		},
 		{
 			resolve: `gatsby-source-filesystem`,
@@ -22,8 +32,15 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-				name: `post`,
-				path: `src/posts`,
+				name: `posts`,
+				path: `${__dirname}/src/posts`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `pages`,
+				path: `${__dirname}/src/pages`,
 			},
 		},
 		`gatsby-transformer-sharp`,

@@ -35,7 +35,12 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
 	return (
 		<Box sx={sx.wrapper}>
-			<SEO title="Terrance Reynolds | Frontend Developer & Designer | Based In Tokyo" />
+			<SEO
+				title="Terrance Reynolds | Frontend Developer & Designer | Based In Tokyo"
+				description="With over six years of design and development experience, my
+					work focuses on creating well-crafted UI's for the web."
+				lang="en"
+			/>
 
 			<Header />
 

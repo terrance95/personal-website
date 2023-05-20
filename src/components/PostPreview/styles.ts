@@ -1,7 +1,7 @@
 const sx: StyleTypes = {
 	wrapper: {
 		py: 6,
-		maxWidth: 'xlg',
+		maxWidth: 'spacing07',
 		borderBottom: '1px solid #191917',
 	},
 	heading: {

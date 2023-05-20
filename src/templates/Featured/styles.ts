@@ -13,14 +13,14 @@ const sx: StyleTypes = {
 		lineHeight: 1.1,
 	},
 	postHeader: {
-		maxWidth: 'lg',
+		maxWidth: 'spacing06',
 		mx: 'auto',
 		pt: 10,
 		pb: 11,
 	},
 	post: {
 		margin: '0 auto',
-		maxWidth: 'lg',
+		maxWidth: 'spacing06',
 	},
 	excerpt: {},
 	body: {

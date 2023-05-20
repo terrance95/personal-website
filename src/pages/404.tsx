@@ -11,7 +11,7 @@ const NotFoundPage = () => (
 		<Header />
 		<SEO title="404: Not found" />
 
-		<Container sx={{ maxWidth: 'xlg', pt: 6 }}>
+		<Container sx={{ maxWidth: 'spacing07', pt: 6 }}>
 			<Box>
 				<Box>
 					<Text as="h2" sx={sx.error404}>

@@ -1,6 +1,5 @@
-import { number } from 'prop-types';
 import * as React from 'react';
-import { Box, Text } from 'theme-ui';
+import { Box } from 'theme-ui';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
 import Header from '../components/Header';

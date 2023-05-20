@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactNode, VFC } from 'react';
 import { Box, Text } from 'theme-ui';
 
 const _sx: StyleTypes = {
@@ -30,7 +30,7 @@ const _sx: StyleTypes = {
 	},
 };
 
-const Tag: FC<ExtendStyles> = ({ children, sx }) => {
+const Tag: FC<ExtendStyles & { children: ReactNode }> = ({ children, sx }) => {
 	return (
 		<Box sx={{ ...sx, ..._sx.flex }}>
 			<svg
