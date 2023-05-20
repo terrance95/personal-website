@@ -257,7 +257,7 @@ const sx: StyleTypes = {
 
 	line: {
 		display: 'flex',
-		borderBottom: '1px solid #191917',
+		borderBottom: '1px solid #383838',
 		pb: 4,
 		mb: 4,
 		'*': {
