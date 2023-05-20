@@ -181,7 +181,17 @@ const sx: StyleTypes = {
 		bg: 'background',
 		display: 'grid',
 		justifyContent: 'center',
-		maxWidth: ['xlg', 'xlg', 'lg', 'lg', 'lg', 'lg', 'lg', 'lg', 'xxlg'],
+		maxWidth: [
+			'spacing07',
+			'spacing07',
+			'spacing06',
+			'spacing06',
+			'spacing06',
+			'spacing06',
+			'spacing06',
+			'spacing06',
+			'spacing08',
+		],
 		margin: '0 auto',
 		p: {
 			mb: [4, 4, 4, 4, 4, 4, 4, 4, 6],
