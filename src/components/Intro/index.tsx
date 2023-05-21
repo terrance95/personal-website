@@ -39,10 +39,6 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 					>
 						<Button variant="primary">Read About Me</Button>
 					</AniLink>
-
-					<AniLink to="/posts" fade>
-						<Button variant="secondary">My Writings</Button>
-					</AniLink>
 				</Box>
 			</FadeIn>
 		</Box>
