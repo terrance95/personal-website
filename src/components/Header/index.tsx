@@ -30,7 +30,15 @@ const Header: FC<HeaderProps> = ({ title, to }) => {
 				{title && (
 					<Box sx={sx.title}>
 						<AniLink to={to ? `${to.toLowerCase()}` : '/'} fade>
-							<Text sx={{ fontSize: '.750rem' }}>{title}</Text>
+							<Text
+								sx={{
+									fontSize: '.750rem',
+									position: 'absolute',
+									left: '50%',
+								}}
+							>
+								{title}
+							</Text>
 						</AniLink>
 					</Box>
 				)}
