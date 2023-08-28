@@ -80,7 +80,7 @@ const DeveloperGuidePage = ({ data }: any) => {
 									display: 'block',
 								}}
 							>
-								Last Updated May 21st, 2023
+								Last Updated August 28th, 2023
 							</Text>
 						</Box>
 						<Box sx={{ position: 'relative' }}>
