@@ -80,7 +80,7 @@ const DeveloperGuidePage = ({ data }: any) => {
 									display: 'block',
 								}}
 							>
-								Last Updated August 28th, 2023
+								Last Updated Aug 28th, 2023
 							</Text>
 						</Box>
 						<Box sx={{ position: 'relative' }}>
@@ -560,7 +560,7 @@ const sx: StyleTypes = {
 		justifyContent: 'center',
 		maxWidth: 'spacing04',
 		margin: '0 auto',
-		mt: 10,
+		mt: [8, 8, 8, 10],
 		mb: 8,
 	},
 	heroHeading: {
