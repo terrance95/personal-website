@@ -39,6 +39,13 @@ const Intro: FC<ExtendStyles> = ({ sx }) => {
 					>
 						<Button variant="primary">Read About Me</Button>
 					</AniLink>
+					<AniLink
+						fade
+						to="/advice"
+						style={{ textDecoration: 'none' }}
+					>
+						<Button variant="secondary">Get Advice</Button>
+					</AniLink>
 				</Box>
 			</FadeIn>
 		</Box>

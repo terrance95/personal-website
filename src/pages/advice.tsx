@@ -429,6 +429,26 @@ const DeveloperGuidePage = ({ data }: any) => {
 							/>
 						</Box>
 					</Box>
+					<Box sx={{ mt: 5 }}>
+						<Box sx={sx.videoContainer}>
+							<iframe
+								width="100%"
+								height="360"
+								src="https://www.youtube.com/embed/4MPIBCEJdVA"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowFullScreen
+								loading="lazy"
+							/>
+						</Box>
+						<Text as="p">
+							You can read the transcript{' '}
+							<a href="https://www.eightvalues.com/podcast/how-to-stand-out-as-a-developer-in-japan">
+								here
+							</a>{' '}
+						</Text>
+					</Box>
 				</Box>
 			</Container>
 			<Footer />

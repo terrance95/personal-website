@@ -6,7 +6,7 @@ export type navItemsType = {
 const navItems: navItemsType[] = [
 	{ title: 'Home', to: '/' },
 	{ title: 'About Me', to: '/about' },
-	// { title: 'Advice', to: '/advice' },
+	{ title: 'Advice', to: '/advice' },
 	{ title: 'Contact', to: '#' },
 ];
 
