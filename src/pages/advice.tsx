@@ -574,7 +574,7 @@ const sx: StyleTypes = {
 		mt: [4],
 		mb: [2],
 	},
-	excerpt: { fontSize: [1, 1, 2], lineHeight: 1.5, pb: 3 },
+	excerpt: { fontSize: [1, 1, 1], lineHeight: 1.5, pb: 3 },
 
 	line: {
 		display: 'flex',
