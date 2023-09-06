@@ -39,7 +39,7 @@ const DeveloperGuidePage = ({ data }: any) => {
 
 	return (
 		<Box sx={sx.wrapper}>
-			<Header title="Free Game" />
+			<Header title="The Blueprint" />
 			<SEO title="Finding Your Path As A Software Engineer in Japan - Terrance Reynolds | Developer & Designer" />
 			<Container sx={{ pb: 6 }}>
 				<Box sx={sx.hero}>
@@ -568,7 +568,7 @@ const sx: StyleTypes = {
 		// textDecorationThickness: '2px',
 		// textDecorationColor: 'primary',
 		fontFamily: 'heading',
-		fontSize: [2, 3, 5, 6, 6],
+		fontSize: [3, 3, 4, 6, 6],
 		lineHeight: 1.1,
 		maxWidth: 'spacing06',
 		mt: [4],
